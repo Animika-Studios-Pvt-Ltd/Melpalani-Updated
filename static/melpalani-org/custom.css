@@ -3,21 +3,21 @@
   font-style: normal;
   font-weight: 400;
   src: local("cinzel-regular"), local("cinzel-regular"),
-    url("/static/melpalani-org/cinzel-regular.ttf") format("truetype");
+    url("cinzel-regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "roboto-regular";
   font-style: normal;
   font-weight: 400;
   src: local("roboto-regular"), local("roboto-regular"),
-    url("/static/melpalani-org/roboto-regular.ttf") format("truetype");
+    url("roboto-regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "roboto-light";
   font-style: normal;
   font-weight: 200;
   src: local("roboto-light"), local("roboto-light"),
-    url("/static/melpalani-org/roboto-light.ttf") format("truetype");
+    url("roboto-light.ttf") format("truetype");
 }
 .top {
   position: absolute;
@@ -742,7 +742,7 @@ hr {
   margin: 10px 0;
 }
 .inner-book {
-  background: url(/static/melpalani-org/icon-bg.webp);
+  background: url("icon-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1321,7 +1321,7 @@ tbody {
   #banner {
     top: 0px;
     height: auto;
-    background: url(/static/melpalani-org/banner-bg.webp);
+    background: url("banner-bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
