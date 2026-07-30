@@ -2,6 +2,12 @@
 @import "homepage.css";
 @import "footer.css";
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* -----------------------------  Global Fonts  ----------------------------- */
 @font-face {
   font-family: "cinzel-regular";
