@@ -631,6 +631,15 @@ li,
 .motif {
   text-align: center;
 }
+.motif img,
+.tree-text img,
+.stone-text img,
+.incarnation-text img {
+  width: auto !important;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
 .temples-image {
   display: flex;
   margin-left: 18px;
