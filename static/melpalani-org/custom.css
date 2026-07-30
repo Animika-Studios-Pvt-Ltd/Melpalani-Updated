@@ -636,7 +636,7 @@ li,
 .stone-text img,
 .incarnation-text img {
   width: auto !important;
-  max-width: 150px;
+  max-width: 90px;
   margin: 0 auto;
   display: block;
 }
