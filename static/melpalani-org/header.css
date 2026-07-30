@@ -86,6 +86,9 @@
   color: #000;
   background-color: transparent;
 }
+.home-page .navbar-nav li:has(.fa-home) {
+  display: none !important;
+}
 
 /* -----------------------------  Responsive Media Queries for Header & Navigation  ----------------------------- */
 @media (min-width: 1600px) and (max-width: 1730px) {
@@ -222,6 +225,10 @@
     left: 0px;
     top: 0px;
   }
+  .navbar-brand img {
+    max-width: 220px;
+    height: auto;
+  }
   .navbar button {
     border: 0;
   }
@@ -234,7 +241,7 @@
   }
   .navbar-expand-lg .navbar-collapse {
     position: absolute;
-    top: 140px;
+    top: 110px;
     background: #fff;
     z-index: 2;
     width: 100%;
@@ -249,7 +256,11 @@
   .navbar-brand {
     left: 0;
     top: 0;
-    width: 32vh;
+    width: auto;
+  }
+  .navbar-brand img {
+    max-width: 170px;
+    height: auto;
   }
   .navbar button {
     border: 0;
@@ -265,7 +276,7 @@
   }
   .navbar-expand-lg .navbar-collapse {
     position: absolute;
-    top: 90px;
+    top: 85px;
     background: #fff;
     z-index: 2;
     width: -webkit-fill-available;

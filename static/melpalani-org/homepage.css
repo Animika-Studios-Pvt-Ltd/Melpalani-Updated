@@ -1,7 +1,7 @@
 /* -----------------------------  Homepage Banner & Carousel Hero Section  ----------------------------- */
 #banner {
   position: relative;
-  top: -800px;
+  top: -770px;
   width: 100%;
   text-align: center;
   height: 0;
@@ -496,7 +496,7 @@ hr {
 /* -----------------------------  Responsive Media Queries for Homepage & Banner  ----------------------------- */
 @media (min-width: 1731px) and (max-width: 1830px) {
   #banner {
-    top: -760px;
+    top: -730px;
   }
   .babaji-banner {
     width: 420px;
@@ -532,7 +532,7 @@ hr {
     height: 0px;
   }
   #banner {
-    top: -700px;
+    top: -670px;
   }
   #pagination-2 {
     right: 340px;
@@ -548,7 +548,7 @@ hr {
 
 @media (min-width: 1500px) and (max-width: 1599px) {
   #banner {
-    top: -660px;
+    top: -630px;
   }
   .banner-image {
     padding: 0 4px;
@@ -607,7 +607,7 @@ hr {
 
 @media (min-width: 1401px) and (max-width: 1499px) {
   #banner {
-    top: -610px;
+    top: -580px;
   }
   .banner-image {
     padding: 0 5px;
@@ -680,7 +680,7 @@ hr {
 
 @media (min-width: 1321px) and (max-width: 1400px) {
   #banner {
-    top: -580px;
+    top: -550px;
   }
   .banner-image {
     padding: 0 4px;
@@ -744,7 +744,7 @@ hr {
 
 @media (min-width: 1200px) and (max-width: 1320px) {
   #banner {
-    top: -530px;
+    top: -500px;
   }
   .banner-image {
     padding: 0 4px;
@@ -838,7 +838,7 @@ hr {
 
 @media (min-width: 1100px) and (max-width: 1199px) {
   #banner {
-    top: -500px;
+    top: -470px;
   }
   .banner-image {
     padding: 0 4px;
@@ -944,7 +944,7 @@ hr {
 
 @media (min-width: 992px) and (max-width: 1099px) {
   #banner {
-    top: -440px;
+    top: -410px;
   }
   .babaji-banner {
     width: 230px;
