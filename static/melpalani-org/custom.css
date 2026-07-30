@@ -1214,6 +1214,7 @@ tbody {
   .stone {
     padding: 20px 0;
     margin: 0 0px;
+    background: none;
   }
   .stone-text {
     padding: 0px 0px 0 0px;
