@@ -270,6 +270,9 @@
 }
 
 @media (max-width: 575px) {
+  #banner {
+    padding-bottom: 10px;
+  }
   .babaji-banner {
     display: none;
   }
@@ -303,7 +306,7 @@
   position: relative;
   z-index: 5;
   background: #d8e3a7;
-  margin: 0 80px;
+  margin: 20px 80px;
   padding: 0;
   border-radius: 15px;
 }
@@ -324,6 +327,128 @@
 .tree-image-2 {
   position: relative;
   left: 19px;
+}
+.tree-text p {
+  margin-bottom: 5px;
+}
+
+/* -----------------------------  Responsive Media Queries for Tree Section  ----------------------------- */
+@media (max-width: 1440px) {
+  .tree-text {
+    padding: 8px 0px 0 0px;
+  }
+  .tree-text p {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .tree-text {
+    padding: 2px 0px 0 0px;
+  }
+  .tree-text p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tree-text {
+    padding: 10px 20px;
+    margin-left: -10%;
+    margin-right: -10%;
+    position: relative;
+    z-index: 6;
+  }
+  .tree-text p {
+    font-size: 11px;
+    letter-spacing: 0em;
+  }
+  .tree-text a {
+    top: -5px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #tree {
+    margin: 0 0px;
+  }
+  .tree-text {
+    padding: 10px 15px;
+    margin-left: -12%;
+    margin-right: -12%;
+    position: relative;
+    z-index: 6;
+  }
+  .tree-text a {
+    top: -5px;
+  }
+}
+
+@media (max-width: 991px) {
+  #tree {
+    background: transparent;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  #tree > div:nth-child(1) {
+    order: 2;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  #tree > div:nth-child(2) {
+    order: 1;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #tree > div:nth-child(3) {
+    order: 3;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tree-text {
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    width: auto;
+    margin-left: 0;
+    height: auto;
+    background: #d8e3a7;
+  }
+  .tree-image-1,
+  .tree-image-2 {
+    left: 0;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #tree {
+    margin: 0px 0px;
+    padding: 15px 0px;
+  }
+  .tree-text {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  #tree {
+    padding: 10px 0 20px;
+  }
+  #tree > div:nth-child(1) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  #tree > div:nth-child(3) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 /* -----------------------------  Common Homepage Section CTA Buttons  ----------------------------- */
@@ -809,12 +934,6 @@ hr {
 }
 
 @media (max-width: 1200px) {
-  .tree-text {
-    padding: 3px 40px 0 40px;
-    width: 405px;
-    margin-left: -45px;
-    height: 216px;
-  }
   .activities {
     margin-top: -100px;
     padding: 140px 0 0vh 0;
@@ -845,18 +964,6 @@ hr {
 }
 
 @media (max-width: 1024px) {
-  #tree {
-    margin: 0 0px;
-  }
-  .tree-text {
-    padding: 5px 20px 0 20px;
-    width: 412px;
-    margin-left: -50px;
-    height: 216px;
-  }
-  .tree-text a {
-    top: -5px;
-  }
   .activities {
     margin-top: -100px;
     padding: 20vh 0 0vh 0;
@@ -906,20 +1013,6 @@ hr {
     margin-top: 0px;
     padding: 30px 0 30px 0;
     height: auto;
-  }
-  #tree {
-    background: transparent;
-    margin: 0 20px;
-  }
-  .tree-text {
-    padding: 25px 0px 25px 0px;
-    border-radius: 10px;
-    margin: 0 70px;
-  }
-  .tree-image-1,
-  .tree-image-2 {
-    left: 0;
-    text-align: center;
   }
   .client-slider {
     padding: 15px 30px;
@@ -984,12 +1077,6 @@ hr {
 }
 
 @media (max-width: 767px) {
-  #tree {
-    margin: 0px 0px;
-  }
-  .tree-text {
-    margin: 0px;
-  }
   .activities {
     padding: 20px 0 20px 0;
   }
