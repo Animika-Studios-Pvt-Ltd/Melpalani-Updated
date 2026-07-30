@@ -162,5 +162,11 @@ $(document).ready(function () {
   $(".carousel-control-prev").attr("aria-label", "Previous");
   $(".carousel-control-next").attr("aria-label", "Next");
 
-  $("#myModal").modal("show");
+  // Lazy load Google Calendar iframe when the modal is opened to avoid third-party cookies on page load
+  $("#niceZoomIn").on("show.bs.modal", function () {
+    var $iframe = $(this).find("iframe");
+    if ($iframe.attr("data-src") && !$iframe.attr("src")) {
+      $iframe.attr("src", $iframe.attr("data-src"));
+    }
+  });
 });

@@ -634,6 +634,7 @@ li,
 .temples-image {
   display: flex;
   margin-left: 18px;
+  align-items: center;
 }
 .temples-image img,
 .video img {
