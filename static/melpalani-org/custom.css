@@ -1,3 +1,8 @@
+@import "header.css";
+@import "homepage.css";
+@import "footer.css";
+
+/* -----------------------------  Global Fonts  ----------------------------- */
 @font-face {
   font-family: "cinzel-regular";
   font-style: normal;
@@ -25,181 +30,8 @@
     local("roboto-light"),
     url("roboto-light.ttf") format("truetype");
 }
-.top {
-  position: absolute;
-  width: -webkit-fill-available;
-}
-.navbar-brand {
-  position: relative;
-  left: 40px;
-  top: 20px;
-}
-.navbar-toggler-icon {
-  width: 30px;
-  height: 2px;
-  background-color: #663300;
-  position: relative;
-  left: 15px;
-  transition: all 0.3s ease-in-out;
-}
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #663300;
-  transition: all 0.3s ease-in-out;
-}
-.navbar-toggler-icon::before {
-  top: -10px;
-}
-.navbar-toggler-icon::after {
-  top: 10px;
-}
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-  background-color: transparent;
-  height: 0;
-}
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
-.navbar-expand-lg .navbar-collapse {
-  justify-content: center;
-}
-@media (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
-.nav-item {
-  padding: 0 25px;
-}
-.nav-link {
-  font-family: "roboto-regular";
-  color: #663300;
-  font-size: 20px;
-}
-.dropdown-item {
-  font-family: "roboto-regular";
-  color: #663300;
-  font-size: 18px;
-}
-.fading-1 {
-  background: linear-gradient(90deg, #e6d9d0, #663300, #e6d9d0) bottom /
-    var(--d, 0) 3px no-repeat;
-  transition: 0.5s;
-}
-.fading-1:hover,
-.fading-1:focus,
-.fading-1:active {
-  --d: 100%;
-}
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-  position: absolute;
-  left: 0;
-  border: 0;
-  background: #e6d9d0;
-}
-.dropdown-item:focus,
-.dropdown-item:hover {
-  color: #000;
-  background-color: transparent;
-}
-#banner {
-  position: relative;
-  top: -800px;
-  width: 100%;
-  text-align: center;
-  height: 0;
-}
-.banner-bg img,
-.inner-banner-bg img {
-  width: 100%;
-}
-.banner-motif {
-  margin-top: -30px;
-}
-.banner-image img {
-  border: 5px solid #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 4px rgb(0 0 0 / 39%);
-  margin: 10px 0;
-}
-.arrow-prev,
-.arrow-next {
-  width: 15px;
-  height: 15px;
-  border: 2px solid #663401;
-  border-left: 0;
-  border-top: 0;
-}
-.arrow-prev {
-  transform: rotate(135deg);
-  position: relative;
-  left: 4px;
-}
-.arrow-next {
-  transform: rotate(315deg);
-  position: relative;
-  right: 5px;
-}
-.carousel-control-prev {
-  background: #fff;
-  opacity: 1;
-  width: auto;
-  height: fit-content;
-  position: absolute;
-  top: 50%;
-  border-radius: 50%;
-  padding: 10px 10px;
-  left: 15px;
-  cursor: pointer;
-}
-.carousel-control-next {
-  background: #fff;
-  opacity: 1;
-  width: auto;
-  height: fit-content;
-  position: absolute;
-  top: 50%;
-  border-radius: 50%;
-  padding: 10px 10px;
-  right: 15px;
-  cursor: pointer;
-}
-#tree {
-  position: relative;
-  z-index: 5;
-  background: #d8e3a7;
-  margin: 0 80px;
-  padding: 0;
-  border-radius: 15px;
-}
-.tree-image-1 {
-  position: relative;
-  left: -12px;
-}
-.tree-image-1 img,
-.tree-image-2 img,
-.charity-image img {
-  border-radius: 15px;
-}
-.tree-text {
-  background: #d8e3a7;
-  padding: 25px 0px 0 0px;
-  text-align: center;
-}
-.tree-image-2 {
-  position: relative;
-  left: 19px;
-}
+
+/* -----------------------------  Base Typography & Global Element Styles  ----------------------------- */
 h1,
 h2,
 h3 {
@@ -225,274 +57,8 @@ li,
   color: #000;
   text-decoration: none;
 }
-.tree-text a,
-.activities a,
-.stone-text a,
-.temples-text a,
-.reach-link a {
-  background: #663200;
-  border-radius: 30px;
-  padding: 3px 25px;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  top: 10px;
-  z-index: 2;
-}
-.activities {
-  background: #e6d9d0;
-  text-align: center;
-  position: relative;
-  margin-top: -200px;
-  padding: 30vh 0 25vh 0;
-  z-index: 2;
-  height: 500px;
-}
-.book img {
-  -webkit-animation: anim 3s infinite linear;
-  animation: anim 3s infinite linear;
-}
-@-webkit-keyframes anim {
-  from {
-    -webkit-transform: rotateY(0);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-  }
-}
 
-@keyframes anim {
-  from {
-    transform: rotateY(0);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-#temples {
-  margin: 0px 80px;
-  background: #dde3e9;
-  border-radius: 0 0 10px 10px;
-  text-align: center;
-  padding: 30px 0;
-}
-#temples img {
-  width: auto;
-  margin: 0 auto;
-}
-.slick-prev,
-.slick-next {
-  position: absolute;
-  line-height: 0;
-  bottom: 0px;
-  top: 350px;
-  width: 25px;
-  height: 25px;
-  display: block;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  border: 1px solid #673301;
-  background: transparent;
-}
-.slick-slider {
-  user-select: none;
-}
-.client-slider .slick-next {
-  right: 85px;
-}
-.client-slider .slick-prev {
-  right: 120px;
-}
-.slick-prev {
-  left: auto;
-  z-index: 2;
-}
-.slick-next:before {
-  content: "\f061";
-  font-family: "FontAwesome";
-  font-weight: 1000;
-  padding-left: 0px;
-  color: #673301;
-}
-.slick-prev:before {
-  content: "\f060";
-  font-family: "FontAwesome";
-  font-weight: 1000;
-  padding-left: 0px;
-  color: #673301;
-}
-.slick-slide img {
-  margin: 0 auto;
-  width: 95% !important;
-  border-radius: 15px;
-}
-#temples .client-slider {
-  padding: 30px 70px;
-}
-.client img {
-  margin-bottom: 10px;
-}
-.client i {
-  color: #673301;
-  margin-left: 15px;
-}
-.slide-content p,
-.slide-content span {
-  text-align: left;
-  margin: 10px 0 0 10px;
-}
-.custom-box p {
-  text-align: center;
-  margin: 10px 0 0 10px;
-}
-.slide-content span {
-  font-family: "roboto-regular";
-  font-size: 20px;
-  margin-top: 10px;
-}
-.custom-box i {
-  color: #6a3a09;
-  margin-left: 15px;
-}
-.pagination {
-  position: absolute;
-  width: auto;
-  right: 240px;
-  margin-top: 460px;
-}
-.pagination-number {
-  font-family: "roboto-regular";
-  color: #663200;
-}
-.client-slider {
-  padding: 0;
-}
-#pagination-2 {
-  position: absolute;
-  width: auto;
-  right: 440px;
-  margin-top: 330px;
-}
-.client {
-  text-align: center;
-}
-.client span {
-  font-family: "roboto-regular";
-}
-.client p {
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-.events {
-  text-align: center;
-  padding: 50px 0 10px 0;
-}
-.multi-item-carousel .carousel-inner > .item {
-  transition: 0.6s ease-in-out all;
-}
-.multi-item-carousel .carousel-inner .active.left {
-  left: -25%;
-}
-.multi-item-carousel .carousel-inner .active.right {
-  left: 25%;
-}
-.multi-item-carousel .carousel-inner .next {
-  left: 25%;
-}
-.multi-item-carousel .carousel-inner .prev {
-  left: -25%;
-}
-.multi-item-carousel .carousel-control.left,
-.multi-item-carousel .carousel-control.right {
-  background-image: none;
-}
-@media all {
-  .multi-item-carousel .carousel-inner > .item {
-    -webkit-transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-    -o-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
-
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-
-    -webkit-perspective: none;
-    perspective: none;
-
-    -webkit-transform: none !important;
-    -ms-transform: none !important;
-    transform: none !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .multi-item-carousel .col-xs-12 {
-    width: 33.33%;
-  }
-}
-@media (max-width: 768px) {
-  .multi-item-carousel .col-xs-12 {
-    width: 50%;
-  }
-}
-@media (max-width: 576px) {
-  .multi-item-carousel .col-xs-12 {
-    width: 100%;
-  }
-}
-.slick-carousel .slick-next {
-  right: 20px;
-}
-.slick-carousel .slick-prev {
-  right: 55px;
-}
-.slick-carousel-number {
-  text-align: end;
-  margin-left: -100px;
-  margin-top: -5px;
-  font-family: "roboto-regular";
-  color: #663200;
-}
-.more {
-  width: fit-content;
-  margin-top: 0px;
-  margin-left: 10px;
-  padding-bottom: 100px;
-}
-.more a {
-  text-decoration: none;
-  border: 1px solid #673301;
-  padding: 5px 15px;
-  border-radius: 25px;
-  color: #673301;
-}
-.calender {
-  position: relative;
-  top: 0px;
-  float: inline-end;
-  width: fit-content;
-}
-.calender button {
-  font-family: "roboto-light";
-  background: transparent;
-  border: 1px solid #673301;
-  color: #673301;
-  border-radius: 25px;
-  padding: 2px 15px;
-  font-size: 19px;
-}
-.fa-calendar-alt {
-  color: #673301;
-  font-size: 22px;
-  position: relative;
-  top: 3px;
-}
+/* -----------------------------  Global Component: Animated CTA Button Style  ----------------------------- */
 .button {
   display: inline-block;
   transition: all 0.3s;
@@ -528,181 +94,8 @@ li,
 .button:hover:before {
   width: 100%;
 }
-.stone {
-  background: linear-gradient(45deg, #66eaf9, #82fad4);
-  padding: 40px 0;
-  margin: 0 80px;
-  border-radius: 15px 15px 0 0;
-  text-align: center;
-}
-.stone-text {
-  padding: 20px 50px 0 50px;
-}
-.stone-text a:hover {
-  border: 0px solid #663200;
-  color: #fff;
-  background: transparent;
-}
-#carouselExampleAutoplaying1 .carousel-control-prev {
-  left: -20px;
-  top: 45%;
-}
-#carouselExampleAutoplaying1 .carousel-control-next {
-  right: -20px;
-  top: 45%;
-}
-.charity-image p {
-  color: #fff;
-  text-align: center;
-  margin-top: 10px;
-}
-#carouselExampleAutoplaying1 h2 {
-  color: #fff;
-  text-align: center;
-}
-.incarnation {
-  background: #014c54;
-  padding: 30px 50px;
-}
-.incarnation-img {
-  position: absolute;
-  margin-top: -50px;
-  margin-left: 30px;
-}
-.incarnation-text h2,
-.incarnation-text p,
-.incarnation-text a,
-.incarnation-text img {
-  color: #fff;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-top: 10px;
-}
-.incarnation-text a {
-  background: #fff;
-  border-radius: 25px;
-  color: #673301;
-  width: fit-content;
-  padding: 0 15px;
-  text-decoration: none;
-}
-.incarnation-text a:hover,
-.more a:hover,
-.calender button:hover {
-  background: #673301;
-  color: #fff;
-  border: none;
-}
-#message {
-  background: linear-gradient(to bottom, #cdbdac, #f4efea);
-  border-radius: 10px;
-  padding: 20px 0 10px 0;
-  margin: 150px 0 50px 0px;
-}
-.motif {
-  text-align: center;
-}
-.motif img,
-.tree-text img,
-.stone-text img,
-.incarnation-text img {
-  width: auto !important;
-  max-width: 90px;
-  margin: 0 auto;
-  display: block;
-}
-.temples-image {
-  display: flex;
-  margin-left: 18px;
-  align-items: center;
-}
-.temples-image img,
-.video img {
-  border-radius: 10px;
-}
-.temples-text {
-  margin-left: 30px;
-}
-.arrow-line3 {
-  position: relative;
-  width: 2px;
-  border: 1px solid #663200;
-  border-radius: 15px;
-  transform: rotate(0deg);
-  height: 265px;
-  margin: 20px auto 0 auto;
-}
-.message-text {
-  text-align: center;
-  padding: 0px 110px 0 0px;
-}
-.message-text p {
-  font-style: italic;
-}
-.q1 {
-  position: absolute;
-  margin-left: -80px;
-  margin-top: -30px;
-}
-hr {
-  color: #663200;
-  opacity: 1;
-}
-.download,
-.download a {
-  display: flex;
-  align-items: baseline;
-  text-decoration: none;
-  margin-top: 32px;
-}
-.download i {
-  color: #663200;
-  border: 1px solid #663200;
-  border-radius: 50%;
-  padding: 3px 5px;
-}
-.download p {
-  font-family: "roboto-regular";
-  color: #663200;
-  margin-left: 15px;
-}
-.reach-hdng {
-  margin-bottom: 30px;
-}
-.reach ul {
-  position: relative;
-  top: -97px;
-  left: 150px;
-  height: 10px;
-  list-style-type: none;
-  width: fit-content;
-}
-.reach p {
-  font-family: "roboto-regular";
-  font-size: 23px;
-  width: fit-content;
-  margin-left: 10px;
-}
-.video {
-  text-align: center;
-}
-.play-btn {
-  position: absolute;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  transform: translate(350%, -265%);
-}
-.fa-play {
-  color: #fff;
-  border: 5px solid #fff;
-  border-radius: 50%;
-  padding: 20px 24px;
-}
-.video a {
-  font-size: 30px;
-}
+
+/* -----------------------------  Inner Pages Specific Layout Styles  ----------------------------- */
 .inner-banner {
   position: relative;
   top: -350px;
@@ -739,8 +132,6 @@ hr {
 }
 .inner-book {
   text-align: center;
-  /*position: relative;
-    top: 35px;*/
 }
 .inner-book img {
   animation: anim 3s infinite linear;
@@ -919,62 +310,6 @@ hr {
   background: #663200;
   color: #fff;
 }
-.footer-image {
-  text-align: center;
-  position: relative;
-  top: 28px;
-}
-.footer-1 {
-  background: #e4d8cc;
-  margin: 0 80px;
-  border-radius: 15px;
-  padding: 50px 0;
-  position: relative;
-  z-index: 2;
-}
-.map iframe {
-  width: 100%;
-  height: 400px;
-  border-radius: 15px;
-}
-.location {
-  margin-left: 40px;
-}
-.location p {
-  margin: 0;
-  font-family: "roboto-regular";
-}
-.location span {
-  font-family: "roboto-light";
-  font-size: 19px;
-}
-.links {
-  display: flex;
-  margin: 50px 0 20px 0px;
-}
-.links ul {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 40px;
-}
-.footer-2 {
-  background: #663200;
-  position: relative;
-  margin-top: -250px;
-  /* z-index: 2; */
-  padding: 270px 0 0px 0;
-}
-.rights p {
-  color: #fff;
-  font-size: 16px;
-}
-.powered a,
-.powered p {
-  color: #dfd1c4;
-  text-decoration: none;
-  text-align: right;
-  font-size: 16px;
-}
 .accordion {
   border: 0px solid transparent !important;
 }
@@ -1045,15 +380,6 @@ tbody {
   position: relative;
   height: 30px;
 }
-.social-media ul {
-  display: flex;
-  list-style-type: none;
-}
-.social-media a {
-  color: #663200;
-  font-size: 21px;
-  margin-left: 10px;
-}
 .checkout-row {
   padding: 200px 0 100px 0;
   width: 100%;
@@ -1062,412 +388,123 @@ tbody {
   color: #0d6efd;
 }
 
-@media (max-width: 767px) {
-  .top {
-    position: relative;
-  }
-  .navbar-brand {
-    left: 0;
-    top: 0;
-    width: 32vh;
-  }
-  .navbar button {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    top: -10px;
-    right: 20px;
-  }
-  .navbar-toggler:focus {
-    outline: 0;
-    box-shadow: none;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: absolute;
-    top: 90px;
-    background: #fff;
-    z-index: 2;
-    width: -webkit-fill-available;
-    left: 0;
-  }
-  .banner-bg,
-  .babaji-banner,
-  .arrow-line3,
-  .inner-banner-bg {
-    display: none;
-  }
-  #banner {
-    top: 0;
-    width: 100%;
-    height: auto;
-    padding-bottom: 30px;
-  }
-  .banner-image {
-    padding: 0 5px;
-  }
+/* -----------------------------  Responsive Media Queries for Inner Pages & Typography  ----------------------------- */
+@media (min-width: 1731px) and (max-width: 1830px) {
   h1,
   h2 {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 25px;
-    text-align: center;
-  }
-  p,
-  a,
-  li,
-  .calender button,
-  .fa-calendar-alt,
-  .slide-content span,
-  .location span {
-    font-size: 17px;
-  }
-  .tree-text a,
-  .activities a,
-  .stone-text a,
-  .temples-text a,
-  .reach-link a {
-    top: 0px;
-  }
-  .tree-image-1,
-  .tree-image-2 {
-    left: 0;
-  }
-  #tree {
-    background: transparent;
-    margin: 0 0px;
-  }
-  .tree-text {
-    padding: 25px 0px 25px 0px;
-    border-radius: 10px;
-  }
-  .activities {
-    margin-top: 0px;
-    padding: 20px 0 20px 0;
-    height: auto;
-  }
-  .book {
-    margin-bottom: 40px;
-  }
-  .client-slider {
-    padding: 10px 0px !important;
-  }
-  .custom-slider-number {
-    margin-left: -110px;
-    top: 0px;
-  }
-  .slick-prev,
-  .slick-next {
-    top: auto;
-  }
-  .client-slider .slick-prev {
-    right: auto;
-  }
-  .client-slider .slick-next {
-    right: 0px;
-  }
-  .pagination,
-  #pagination-2 {
-    display: none;
-  }
-  #message {
-    margin: 50px 0 50px 0px;
-  }
-  #temples {
-    margin: 0px 0px;
-  }
-  .q1 {
-    position: relative;
-    margin-left: -13px;
-    margin-top: -10px;
-  }
-  .download {
-    display: block;
-  }
-  .download a {
-    margin-top: 0px;
-  }
-  .more {
-    margin-left: 0px;
-    padding-bottom: 50px;
-  }
-  .stone {
-    padding: 20px 0;
-    margin: 0 0px;
-    background: none;
-  }
-  .stone-text {
-    padding: 0px 0px 0 0px;
-  }
-  .incarnation-img {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .temples-image {
-    display: block;
-    margin-left: 0px;
-    text-align: center;
-  }
-  .temples-text {
-    margin-left: 0px;
-  }
-  .message-text {
-    padding: 20px 0px 0 0px;
-  }
-  .reach ul {
-    left: 95px;
-  }
-  .video {
-    padding: 20px 0 50px 0;
-  }
-  .play-btn {
-    transform: translate(195%, -200%);
-  }
-  .footer-image {
-    top: 0px;
-  }
-  .footer-1 {
-    margin: 0 0px;
-    padding: 0px 0;
-    border-radius: 0px;
-  }
-  .map iframe {
-    height: 300px;
-  }
-  .links {
-    display: block;
-    margin: 10px 0 0 0px;
-  }
-  .location,
-  .links ul {
-    margin-left: 0px;
-  }
-  .powered a,
-  .powered p {
-    text-align: left;
-  }
-  .footer-2 {
-    margin-top: 0px;
-    padding: 10px 0 0px 0;
-    z-index: 0;
-  }
-  .inner-banner {
-    top: 0;
-    height: auto;
-  }
-  .inner-banner img {
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
-  }
-  .brdcrmb nav {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .inner-book-txt {
-    padding-bottom: 30px;
+    font-size: 28px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .top {
-    position: relative;
+@media (min-width: 1600px) and (max-width: 1730px) {
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+  p,
+  a,
+  li,
+  .calender button,
+  .sevas-more button {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+  p,
+  a,
+  li {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1499px) {
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p,
+  a,
+  li,
+  .sevas-more button {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1321px) and (max-width: 1400px) {
+  h1,
+  h2 {
+    font-size: 21px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p,
+  a,
+  li,
+  .sevas-more button {
+    font-size: 17px;
+  }
+  .brdcrmb nav {
+    margin-left: 190px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  h1,
+  h2 {
+    font-size: 15px;
   }
   p,
   a,
   li,
   .calender button,
   .fa-calendar-alt,
-  .slide-content span,
   .location span,
-  .rights p {
-    font-size: 14px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  .navbar-brand {
-    left: 0px;
-    top: 0px;
-  }
-  .navbar button {
-    border: 0;
-  }
-  .navbar button {
-    position: relative;
-    right: 15px;
-  }
-  .navbar-toggler:focus {
-    box-shadow: none;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: absolute;
-    top: 140px;
-    background: #fff;
-    z-index: 2;
-    width: 100%;
-    left: 0;
-  }
-  #banner {
-    top: 0px;
-    height: auto;
-    background: url("banner-bg.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .banner-image {
-    padding: 0px 5px;
-  }
-  .babaji-banner {
-    width: 175px;
-    margin: 0 auto;
-  }
-  .carousel-control-next {
-    right: -10px;
-  }
-  .carousel-control-prev {
-    left: -10px;
-  }
-  .activities {
-    margin-top: 0px;
-    padding: 30px 0 30px 0;
-    height: auto;
-  }
-  #tree {
-    background: transparent;
-  }
-  .tree-text {
-    padding: 25px 0px 25px 0px;
-    border-radius: 10px;
-    margin: 0 70px;
-  }
-  .tree-image-1,
-  .tree-image-2 {
-    left: 0;
-    text-align: center;
-  }
-  .client-slider {
-    padding: 15px 30px;
-  }
-  .stone-text {
-    padding: 0px 0px 0 0px;
-  }
-  .stone,
-  #temples,
-  #tree {
-    margin: 0 20px;
-  }
-  .incarnation-img {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  #message {
-    margin: 90px 0 50px 0px;
-  }
-  .message-text {
-    padding: 20px 80px 0 80px;
-  }
-  .download,
-  .download a {
-    margin-top: 10px;
-    justify-content: space-evenly;
-  }
-  .temples-image {
-    margin-top: 15px;
-  }
-  .arrow-line3,
-  .banner-bg {
-    display: none;
-  }
-  .reach ul {
-    left: 70px;
-    height: 0px;
-    top: -89px;
-  }
-  .reach p {
-    font-size: 18px;
-  }
-  .play-btn {
-    transform: translate(164%, -185%);
-  }
-  .footer-1 {
-    margin: 0 20px;
-    padding: 30px 0;
-  }
-  .links {
-    margin: 30px 0 0 0px;
-  }
-  .links a {
-    font-size: 12px;
-  }
-  .location,
-  .links ul {
-    margin-left: 10px;
-  }
-  .map iframe {
-    height: 250px;
-  }
-  .inner-banner {
-    top: -200px;
-    height: 80px;
+  .sevas-more button {
+    font-size: 15px;
+    letter-spacing: 0;
   }
   .brdcrmb nav {
-    margin-left: 120px;
+    margin-left: 190px;
   }
-  .inner-book-txt h3 {
-    font-size: 15px;
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  h1,
+  h2 {
+    font-size: 17px;
   }
-  .inner-book {
-    background-size: contain;
-    padding: 20px;
+  p,
+  a,
+  li,
+  .slide-content span,
+  .calender button,
+  .fa-calendar-alt,
+  .location span,
+  .sevas-more button {
+    font-size: 13px;
   }
-  .inner-book img {
-    width: 65px;
+  .brdcrmb nav {
+    margin-left: 160px;
   }
-  #pagination-2 {
-    right: 170px;
+  #arrow:before {
+    width: 8px;
+    height: 8px;
   }
-  .pagination {
-    margin-top: 370px;
-    right: 170px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 275px;
+  #arrow:after {
+    width: 12px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1099px) {
-  .navbar-brand {
-    left: 5px;
-    top: 0px;
-    width: 30vh;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -10px;
-  }
-  .nav-item {
-    padding: 0 8px;
-  }
-  .nav-link {
-    font-size: 14px;
-  }
-  #banner {
-    top: -440px;
-  }
-  .babaji-banner {
-    width: 230px;
-    margin: 0 auto;
-  }
-  .carousel-control-next {
-    right: -15px;
-  }
-  .carousel-control-prev {
-    left: -15px;
-  }
   h1,
   h2 {
     font-size: 14px;
@@ -1487,71 +524,8 @@ tbody {
   .powered p {
     font-size: 13px;
   }
-  #tree {
-    margin: 0 0px;
-  }
-  .tree-text p {
-    font-size: 13px;
-  }
-  .tree-text {
-    padding: 5px 20px 0 20px;
-    width: 412px;
-    margin-left: -50px;
-    height: 216px;
-  }
-  .tree-text a {
-    top: -5px;
-  }
-  .activities {
-    margin-top: -100px;
-    padding: 20vh 0 0vh 0;
-    height: 360px;
-  }
-  .client-slider {
-    padding: 20px 30px;
-  }
-  .stone-text {
-    padding: 0px 20px 0 20px;
-  }
-  .incarnation {
-    padding: 30px 0px;
-  }
-  .incarnation-img {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .message-text {
-    padding: 0px 70px 0 0px;
-  }
-  .reach ul {
-    left: 80px;
-  }
-  .play-btn {
-    transform: translate(235%, -230%);
-  }
-  .map iframe {
-    height: 250px;
-  }
-  .links {
-    margin: 30px 0 0 0px;
-  }
-  .inner-banner {
-    top: -190px;
-    height: 180px;
-  }
   .brdcrmb nav {
     margin-left: 160px;
-  }
-  .inner-book-txt h3 {
-    font-size: 20px;
-  }
-  .location,
-  .links ul {
-    margin-left: 25px;
-  }
-  .rights {
-    text-align: center;
   }
   .facility-image p {
     font-size: 18px;
@@ -1559,695 +533,48 @@ tbody {
   .arrow-1 {
     top: -40px;
   }
-  #pagination-2 {
-    right: 190px;
-  }
-  .pagination {
-    margin-top: 350px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 255px;
-  }
 }
 
-@media (min-width: 1100px) and (max-width: 1199px) {
-  h1,
+@media (min-width: 768px) and (max-width: 991px) {
   h2 {
-    font-size: 17px;
-  }
-  p,
-  a,
-  li,
-  .slide-content span,
-  .calender button,
-  .fa-calendar-alt,
-  .location span,
-  .sevas-more button {
-    font-size: 13px;
-  }
-  .navbar-brand {
-    left: 10px;
-    top: 0px;
-    width: 35vh;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -10px;
-  }
-  .nav-item {
-    padding: 0 10px;
-  }
-  .nav-link {
-    font-size: 17px;
-  }
-  .dropdown-item {
-    font-size: 15px;
-  }
-  #banner {
-    top: -500px;
-  }
-  .banner-image {
-    padding: 0 4px;
-  }
-  .babaji-banner {
-    width: 265px;
-    margin: 0 auto;
-  }
-  .carousel-control-next {
-    right: -10px;
-  }
-  .carousel-control-prev {
-    left: -10px;
-  }
-  .tree-text {
-    padding: 3px 40px 0 40px;
-    width: 405px;
-    margin-left: -45px;
-    height: 216px;
-  }
-  .tree-text p {
-    font-size: 11px;
-    letter-spacing: 0em;
-  }
-  .tree-text a {
-    top: -10px;
-    font-size: 11px;
-  }
-  .activities {
-    margin-top: -100px;
-    padding: 140px 0 0vh 0;
-    height: 340px;
-  }
-  .slick-prev,
-  .slick-next {
-    width: 20px;
-    height: 20px;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    padding-left: 2px;
-  }
-  .more {
-    padding-bottom: 50px;
-  }
-  .stone-image img {
-    width: 60vh;
-  }
-  .stone-text {
-    padding: 0px 70px 0 70px;
-  }
-  .incarnation {
-    padding: 30px 15px;
-  }
-  .incarnation-img {
-    margin-left: 0px;
-    width: 390px;
-  }
-  .arrow-prev {
-    left: 2px;
-  }
-  .arrow-prev,
-  .arrow-next {
-    width: 10px;
-    height: 10px;
-  }
-  .arrow-next {
-    right: 2px;
-  }
-  #message {
-    margin: 100px 0 50px 0px;
-  }
-  .temples-image img {
-    width: 60%;
-  }
-  .arrow-line3 {
-    height: 240px;
-  }
-  .reach ul {
-    top: -90px;
-    left: 100px;
-    height: 0px;
-  }
-  .play-btn {
-    transform: translate(240%, -230%);
-  }
-  .map iframe {
-    height: 300px;
-  }
-  .footer-2 {
-    margin-top: -220px;
-    padding: 240px 0 0px 0;
-  }
-  .inner-banner {
-    top: -210px;
-  }
-  .brdcrmb nav {
-    margin-left: 160px;
-  }
-  .inner-book-txt h3 {
     font-size: 20px;
   }
-  #arrow:before {
-    width: 8px;
-    height: 8px;
-  }
-  #arrow:after {
-    width: 12px;
-  }
-  .pagination {
-    margin-top: 350px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 258px;
-  }
-  #pagination-2 {
-    right: 250px;
-    margin-top: 260px;
-  }
-  .slick-prev,
-  .slick-next {
-    top: 280px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1320px) {
-  h1,
-  h2 {
-    font-size: 18px;
-  }
   p,
   a,
   li,
   .calender button,
   .fa-calendar-alt,
+  .slide-content span,
   .location span,
-  .sevas-more button {
-    font-size: 15px;
-    letter-spacing: 0;
-  }
-  .navbar-brand {
-    top: 0px;
-    left: 5px;
-    width: 300px;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -10px;
-  }
-  .nav-item {
-    padding: 0 15px;
-  }
-  .nav-link {
-    font-size: 17px;
-  }
-  .dropdown-item {
+  .rights p {
     font-size: 14px;
   }
-  #banner {
-    top: -530px;
+  .brdcrmb nav {
+    margin-left: 120px;
   }
-  .banner-image {
-    padding: 0 4px;
+}
+
+@media (max-width: 767px) {
+  h1,
+  h2 {
+    font-size: 25px;
   }
-  .babaji-banner {
-    width: 280px;
-    margin: 0 auto;
-  }
-  .carousel-control-next {
-    right: -15px;
-  }
-  .carousel-control-prev {
-    left: -15px;
-  }
-  .tree-text {
-    padding: 0px 0px 0 0px;
-  }
-  .tree-text p {
-    font-size: 11px;
-  }
-  .tree-text a,
-  .activities a,
-  .stone-text a,
-  .temples-text a,
-  .reach-link a {
-    top: 0px;
-  }
-  .activities {
-    margin-top: -110px;
-    padding: 20vh 0 0vh 0;
-    height: 360px;
-  }
-  #temples {
-    padding: 15px 0;
-  }
-  .client-slider {
-    padding: 20px 25px;
-  }
-  .slick-prev,
-  .slick-next {
-    width: 20px;
-    height: 20px;
-  }
-  .slick-next:before,
-  .slick-prev:before {
-    padding-left: 4px;
-    font-size: 13px;
-  }
-  .slick-slide img {
-    border-radius: 10px;
-  }
-  .slide-content span {
-    font-size: 15px;
-  }
-  .stone-image img {
-    width: 60vh;
-  }
-  .stone-text {
-    padding: 3px 80px 0 80px;
-  }
-  .incarnation {
-    padding: 30px 15px;
-  }
-  .incarnation-img {
-    margin-top: -36px;
-    margin-left: 20px;
-    width: 390px;
-  }
-  #message {
-    margin: 100px 0 50px 0px;
-  }
-  .reach ul {
-    top: -91px;
-    height: 0px;
-  }
-  .play-btn {
-    transform: translate(290%, -265%);
-  }
-  .map iframe {
-    height: 330px;
-  }
-  .rights {
+  h2 {
+    font-size: 25px;
     text-align: center;
-  }
-  .inner-banner {
-    top: -210px;
-    height: 230px;
-  }
-  .brdcrmb nav {
-    margin-left: 190px;
-  }
-  .inner-book-txt h3 {
-    font-size: 20px;
-  }
-  .pagination {
-    margin-top: 350px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 258px;
-  }
-  #pagination-2 {
-    right: 220px;
-  }
-}
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  h1,
-  h2 {
-    font-size: 21px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  p,
-  a,
-  li,
-  .sevas-more button {
-    font-size: 17px;
-  }
-  .navbar-brand {
-    left: 5px;
-    top: 0px;
-    width: 300px;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -15px;
-  }
-  .nav-item {
-    padding: 0 17px;
-  }
-  .nav-link {
-    font-size: 18px;
-  }
-  .dropdown-item {
-    font-size: 16px;
-  }
-  #banner {
-    top: -580px;
-  }
-  .banner-image {
-    padding: 0 4px;
-  }
-  .babaji-banner {
-    width: 315px;
-    margin: 0 auto;
-  }
-  .carousel-control-prev {
-    left: -15px;
-  }
-  .carousel-control-next {
-    right: -15px;
-  }
-  .tree-text p {
-    font-size: 13px;
-  }
-  .tree-text {
-    padding: 2px 0px 0 0px;
-  }
-  .tree-text a,
-  .activities a,
-  .stone-text a,
-  .temples-text a,
-  .reach-link a {
-    top: 0px;
-  }
-  .activities {
-    margin-top: -120px;
-    padding: 20vh 0 0vh 0;
-    height: 370px;
-  }
-  .stone-text {
-    padding: 4px 50px 0 50px;
-  }
-  .stone-image img {
-    width: 58vh;
-  }
-  .incarnation {
-    padding: 30px 0px;
-  }
-  .incarnation-img {
-    margin-top: -50px;
-    margin-left: 10px;
-    width: 450px;
-  }
-  .inner-banner {
-    top: -280px;
-  }
-  .brdcrmb nav {
-    margin-left: 190px;
-  }
-  .inner-book-txt h3 {
-    font-size: 23px;
-  }
-  .reach ul {
-    left: 110px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 280px;
-  }
-  .pagination {
-    margin-top: 380px;
-  }
-  #pagination-2 {
-    right: 265px;
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1499px) {
-  p,
-  a,
-  li,
-  .sevas-more button {
-    font-size: 17px;
-  }
-  h1,
-  h2 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  .navbar-brand {
-    left: 10px;
-    top: 0px;
-    width: 350px;
-  }
-  .nav-item {
-    padding: 0 17px;
-  }
-  .nav-link {
-    font-size: 18px;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -10px;
-  }
-  #banner {
-    top: -610px;
-  }
-  .banner-image {
-    padding: 0 5px;
-  }
-  .babaji-banner {
-    width: 330px;
-    margin: 0 auto;
-  }
-  .carousel-control-next {
-    right: -15px;
-  }
-  .carousel-control-prev {
-    left: -15px;
-  }
-  .tree-text a,
-  .activities a,
-  .stone-text a,
-  .temples-text a,
-  .reach-link a {
-    top: 0px;
-  }
-  .tree-text {
-    padding: 8px 0px 0 0px;
-  }
-  .tree-text p {
-    font-size: 15px;
-    letter-spacing: 0;
-  }
-  .activities {
-    margin-top: -140px;
-    padding: 25vh 0 25vh 0;
-    height: 400px;
-  }
-  .stone-text {
-    padding: 10px 80px 0;
-  }
-  .stone-image img {
-    width: 60vh;
-  }
-  .incarnation {
-    padding: 30px 0px;
-  }
-  .incarnation-img {
-    width: 450px;
-  }
-  .arrow-prev,
-  .arrow-next {
-    width: 12px;
-    height: 12px;
-  }
-  .arrow-next {
-    right: 3px;
-  }
-  .arrow-prev {
-    left: 3px;
-  }
-  .reach ul {
-    top: -92px;
-    height: 0px;
-  }
-  .inner-banner {
-    top: -290px;
-    height: 220px;
-  }
-  .pagination {
-    margin-top: 395px;
-  }
-  #pagination-2 {
-    right: 210px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 290px;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1599px) {
-  h1,
-  h2 {
-    font-size: 24px;
-  }
-  p,
-  a,
-  li {
-    font-size: 17px;
-  }
-  .navbar-brand {
-    left: 10px;
-    top: 0px;
-    width: 300px;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -10px;
-  }
-  .nav-item {
-    padding: 0 18px;
-  }
-  .nav-link {
-    font-size: 18px;
-  }
-  #banner {
-    top: -660px;
-  }
-  .banner-image {
-    padding: 0 4px;
-  }
-  .babaji-banner {
-    margin: 0 auto;
-    width: 350px;
-  }
-  .carousel-control-prev {
-    left: -15px;
-  }
-  .carousel-control-next {
-    right: -15px;
-  }
-  .tree-text a,
-  .activities a,
-  .stone-text a,
-  .temples-text a,
-  .reach-link a {
-    top: 0px;
-  }
-  .tree-text {
-    padding: 15px 0px 0 0px;
-  }
-  .tree-text p {
-    font-size: 16px;
-  }
-  .activities {
-    margin-top: -140px;
-    padding: 25vh 0 0vh 0;
-    height: 420px;
-  }
-  .stone-text {
-    padding: 15px 90px 0 90px;
-  }
-  .stone-image img {
-    width: 60vh;
-  }
-  .incarnation-img {
-    margin-left: 5px;
-    width: 450px;
-  }
-  .reach ul {
-    top: -94px;
-    height: 0px;
-  }
-  .inner-banner {
-    top: -300px;
-    height: 210px;
-  }
-  #pagination-2 {
-    right: 260px;
-  }
-  .pagination {
-    margin-top: 400px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 295px;
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  .navbar-brand {
-    width: 350px;
-  }
-  h1,
-  h2 {
-    font-size: 26px;
   }
   p,
   a,
   li,
   .calender button,
-  .sevas-more button {
+  .fa-calendar-alt,
+  .slide-content span,
+  .location span {
     font-size: 17px;
   }
-  .babaji-banner {
-    width: 380px;
-    margin: 0 auto;
-  }
-  .nav-item {
-    padding: 0 20px;
-  }
-  .activities {
-    margin-top: -150px;
-    padding: 25vh 0 0vh 0;
-    height: 430px;
-  }
-  .stone-text {
-    padding: 3px 70px 0 70px;
-  }
-  .stone-image img {
-    width: 58vh;
-  }
-  .incarnation-img {
-    margin-left: 10px;
-    width: 490px;
-  }
-  .reach ul {
-    top: -94px;
-    height: 0px;
-  }
-  #banner {
-    top: -700px;
-  }
-  #pagination-2 {
-    right: 340px;
-  }
-  .pagination {
-    margin-top: 420px;
-  }
-  #temples .slick-prev,
-  #temples .slick-next {
-    top: 312px;
+  .brdcrmb nav {
+    margin-left: 0px;
+    margin-top: 10px;
   }
 }
 
-@media (min-width: 1731px) and (max-width: 1830px) {
-  h1,
-  h2 {
-    font-size: 28px;
-  }
-  #banner {
-    top: -760px;
-  }
-  .babaji-banner {
-    width: 420px;
-    margin: 0 auto;
-  }
-  .banner-image {
-    padding: 0 5px;
-  }
-  .carousel-control-prev {
-    left: -10px;
-  }
-  .carousel-control-next {
-    right: -10px;
-  }
-}
