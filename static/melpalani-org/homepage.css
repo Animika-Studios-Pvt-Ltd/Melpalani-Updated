@@ -896,37 +896,41 @@
 }
 .more {
   width: fit-content;
-  margin-top: 0px;
-  margin-left: 10px;
-  padding-bottom: 100px;
+  margin: -30px 10px 15px 10px !important;
+  display: inline-block !important;
+  vertical-align: middle;
+  float: none !important;
+  padding-bottom: 0 !important;
 }
-.more a {
-  text-decoration: none;
-  border: 1px solid #673301;
-  padding: 5px 15px;
-  border-radius: 25px;
+.more a,
+.calender button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "roboto-regular";
+  font-size: 16px;
   color: #673301;
+  background: transparent;
+  border: 1px solid #673301;
+  border-radius: 25px;
+  padding: 6px 20px;
+  text-decoration: none;
+  height: 38px;
+  box-sizing: border-box;
 }
 .calender {
   position: relative;
-  top: 0px;
-  float: inline-end;
+  margin: -30px 10px 15px 10px !important;
+  display: inline-block !important;
+  vertical-align: middle;
+  float: none !important;
   width: fit-content;
-}
-.calender button {
-  font-family: "roboto-light";
-  background: transparent;
-  border: 1px solid #673301;
-  color: #673301;
-  border-radius: 25px;
-  padding: 2px 15px;
-  font-size: 19px;
+  padding-bottom: 0 !important;
 }
 .fa-calendar-alt {
   color: #673301;
-  font-size: 22px;
-  position: relative;
-  top: 3px;
+  font-size: 16px;
+  margin-right: 8px;
 }
 .client-slider {
   padding: 0;
@@ -934,6 +938,8 @@
 #events-row {
   position: relative;
   padding-bottom: 20px;
+  display: block !important;
+  text-align: center !important;
 }
 #events-row .events-slider {
   margin-bottom: 60px;
@@ -1027,6 +1033,8 @@
   }
   #events-row {
     padding-bottom: 20px;
+    display: block !important;
+    text-align: center !important;
   }
   #events-row .events-slider {
     padding: 10px 10px;
@@ -1057,6 +1065,22 @@
   .events-pagination-number {
     font-size: 15px;
   }
+  .more, .calender {
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: middle;
+    margin: -25px 5px 15px 5px !important;
+    padding-bottom: 0;
+  }
+  .more a, .calender button {
+    font-size: 15px !important;
+    padding: 4px 12px !important;
+    height: 32px !important;
+  }
+  .fa-calendar-alt {
+    font-size: 13px !important;
+    top: 0px !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1065,6 +1089,8 @@
   }
   #events-row {
     padding-bottom: 20px;
+    display: block !important;
+    text-align: center !important;
   }
   #events-row .events-slider {
     padding: 10px 10px;
@@ -1087,11 +1113,24 @@
   .events-pagination-number {
     font-size: 14px;
   }
+  .more, .calender {
+    margin: -25px 4px 15px 4px !important;
+  }
+  .more a, .calender button {
+    font-size: 14px !important;
+    padding: 3px 10px !important;
+    height: 32px !important;
+  }
+  .fa-calendar-alt {
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 480px) {
   #events-row {
     padding-bottom: 15px;
+    display: block !important;
+    text-align: center !important;
   }
   #events-row .slick-prev:before,
   #events-row .slick-next:before {
@@ -1114,11 +1153,24 @@
   .events-pagination-number {
     font-size: 13px;
   }
+  .more, .calender {
+    margin: -20px 3px 10px 3px !important;
+  }
+  .more a, .calender button {
+    font-size: 13px !important;
+    padding: 3px 10px !important;
+    height: 28px !important;
+  }
+  .fa-calendar-alt {
+    font-size: 11px !important;
+  }
 }
 
 @media (max-width: 360px) {
   #events-row {
     padding-bottom: 10px;
+    display: block !important;
+    text-align: center !important;
   }
   #events-row .slick-prev:before,
   #events-row .slick-next:before {
@@ -1140,6 +1192,17 @@
   }
   .events-pagination-number {
     font-size: 12px;
+  }
+  .more, .calender {
+    margin: -20px 2px 10px 2px !important;
+  }
+  .more a, .calender button {
+    font-size: 12px !important;
+    padding: 2px 8px !important;
+    height: 28px !important;
+  }
+  .fa-calendar-alt {
+    font-size: 10px !important;
   }
 }
 
@@ -1380,9 +1443,6 @@ hr {
 }
 
 @media (max-width: 1200px) {
-  .more {
-    padding-bottom: 50px;
-  }
   .incarnation-img {
     margin-left: 0px;
     width: 390px;
@@ -1525,7 +1585,6 @@ hr {
   }
   .more {
     margin-left: 0px;
-    padding-bottom: 50px;
   }
   .stone {
     padding: 20px 0;
