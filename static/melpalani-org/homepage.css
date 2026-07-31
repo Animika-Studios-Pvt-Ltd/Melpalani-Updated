@@ -498,6 +498,101 @@
   }
 }
 
+/* -----------------------------  Responsive Media Queries for Activities Section  ----------------------------- */
+@media (max-width: 1440px) {
+  .activities {
+    margin-top: -120px;
+    padding: 20vh 0 0vh 0;
+    height: 370px;
+  }
+  .book img {
+    max-width: 120px;
+  }
+  .book h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .activities {
+    margin-top: -110px;
+    padding: 20vh 0 0vh 0;
+    height: 360px;
+  }
+  .book img {
+    max-width: 110px;
+  }
+  .book h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .activities {
+    margin-top: -100px;
+    padding: 140px 0 0vh 0;
+    height: 340px;
+  }
+  .book img {
+    max-width: 100px;
+  }
+  .book h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .activities {
+    margin-top: -100px;
+    padding: 20vh 0 0vh 0;
+    height: 360px;
+  }
+  .book img {
+    max-width: 95px;
+  }
+  .book h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 991px) {
+  .activities {
+    margin-top: 0px;
+    padding: 30px 0 30px 0;
+    height: auto;
+  }
+  .book img {
+    max-width: 90px;
+  }
+  .book h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .activities {
+    padding: 20px 0 20px 0;
+  }
+  .book {
+    margin-bottom: 40px;
+  }
+  .book img {
+    max-width: 80px;
+  }
+  .book h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .book img {
+    max-width: 90px;
+  }
+  .book h2 {
+    font-size: 20px;
+  }
+}
+
 /* -----------------------------  Temples Section (Carousel slider)  ----------------------------- */
 #temples {
   margin: 0px 80px;
@@ -859,11 +954,6 @@ hr {
   .inner-banner {
     top: -280px;
   }
-  .activities {
-    margin-top: -120px;
-    padding: 20vh 0 0vh 0;
-    height: 370px;
-  }
   .stone-text {
     padding: 4px 50px 0 50px;
   }
@@ -898,11 +988,6 @@ hr {
     top: -210px;
     height: 230px;
   }
-  .activities {
-    margin-top: -110px;
-    padding: 20vh 0 0vh 0;
-    height: 360px;
-  }
   .stone-text {
     padding: 3px 80px 0 80px;
   }
@@ -934,11 +1019,6 @@ hr {
 }
 
 @media (max-width: 1200px) {
-  .activities {
-    margin-top: -100px;
-    padding: 140px 0 0vh 0;
-    height: 340px;
-  }
   .more {
     padding-bottom: 50px;
   }
@@ -964,11 +1044,6 @@ hr {
 }
 
 @media (max-width: 1024px) {
-  .activities {
-    margin-top: -100px;
-    padding: 20vh 0 0vh 0;
-    height: 360px;
-  }
   .client-slider {
     padding: 20px 30px;
   }
@@ -1009,11 +1084,6 @@ hr {
 }
 
 @media (max-width: 991px) {
-  .activities {
-    margin-top: 0px;
-    padding: 30px 0 30px 0;
-    height: auto;
-  }
   .client-slider {
     padding: 15px 30px;
   }
@@ -1077,12 +1147,6 @@ hr {
 }
 
 @media (max-width: 767px) {
-  .activities {
-    padding: 20px 0 20px 0;
-  }
-  .book {
-    margin-bottom: 40px;
-  }
   .client-slider {
     padding: 10px 0px !important;
   }
