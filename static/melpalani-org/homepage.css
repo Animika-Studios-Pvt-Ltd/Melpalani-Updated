@@ -332,7 +332,6 @@
   margin-bottom: 5px;
 }
 
-/* -----------------------------  Responsive Media Queries for Tree Section  ----------------------------- */
 @media (max-width: 1440px) {
   .tree-text {
     padding: 8px 0px 0 0px;
@@ -498,7 +497,6 @@
   }
 }
 
-/* -----------------------------  Responsive Media Queries for Activities Section  ----------------------------- */
 @media (max-width: 1440px) {
   .activities {
     margin-top: -120px;
