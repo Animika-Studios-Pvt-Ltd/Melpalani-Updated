@@ -1214,6 +1214,9 @@
   border-radius: 15px 15px 0 0;
   text-align: center;
 }
+.stone .row {
+  align-items: center;
+}
 .stone-text {
   padding: 20px 50px 0 50px;
 }
@@ -1221,6 +1224,11 @@
   border: 0px solid #663200;
   color: #fff;
   background: transparent;
+}
+.stone-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* -----------------------------  Charity & Divine Incarnation Section  ----------------------------- */
@@ -1593,6 +1601,15 @@ hr {
   }
   .stone-text {
     padding: 0px 0px 0 0px;
+  }
+  .stone-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .stone-image img {
+    max-width: 80% !important;
+    margin: 0 auto;
+    display: inline-block;
   }
   .incarnation-img {
     position: relative;
