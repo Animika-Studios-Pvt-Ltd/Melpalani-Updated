@@ -1420,15 +1420,18 @@
   }
 }
 
-/* -----------------------------  Babaji's Message, Reach & Video Section  ----------------------------- */
+/* -----------------------------  Sevas & Babaji's Message Section  ----------------------------- */
 #message {
   background: linear-gradient(to bottom, #cdbdac, #f4efea);
   border-radius: 10px;
   padding: 20px 0 10px 0;
-  margin: 150px 0 50px 0px;
+  margin: 60px 0;
 }
 .motif {
   text-align: center;
+}
+#message .motif {
+  margin-bottom: 20px;
 }
 .motif img,
 .tree-text img,
@@ -1493,6 +1496,80 @@ hr {
   font-family: "roboto-regular";
   color: #663200;
   margin-left: 15px;
+}
+
+/* -----------------------------  Responsive Media Queries for Sevas & Babaji's Message  ----------------------------- */
+@media (max-width: 1200px) {
+  #message {
+    margin: 50px 0;
+  }
+  .arrow-line3 {
+    height: 180px;
+  }
+}
+@media (max-width: 991px) {
+  #message {
+    margin: 40px 0;
+    padding: 20px 10px;
+  }
+  .arrow-line3 {
+    display: none !important;
+  }
+  #message .motif {
+    margin-bottom: 15px !important;
+  }
+  .temples-image {
+    display: block !important;
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+  .temples-text {
+    margin-left: 0 !important;
+    margin-top: 15px !important;
+  }
+  .message-text {
+    padding: 0 20px !important;
+    margin-top: 30px !important;
+  }
+  .q1 {
+    position: relative !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-right: 5px !important;
+  }
+  .download {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+  }
+  .download a {
+    justify-content: center !important;
+    margin: 10px 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  #message {
+    margin: 30px 0;
+  }
+  #message .motif {
+    margin-bottom: 12px !important;
+  }
+  .message-text {
+    padding: 0 15px !important;
+  }
+}
+@media (max-width: 575px) {
+  #message {
+    margin: 20px 0;
+  }
+  #message .motif {
+    margin-bottom: 10px !important;
+  }
+  .temples-image img {
+    max-width: 80% !important;
+  }
 }
 .reach-hdng {
   margin-bottom: 30px;
@@ -1576,9 +1653,6 @@ hr {
 }
 
 @media (max-width: 1200px) {
-  .arrow-line3 {
-    height: 240px;
-  }
   .reach ul {
     top: -90px;
     left: 100px;
@@ -1601,9 +1675,6 @@ hr {
     padding: 0px 20px 0 20px;
   }
 
-  .message-text {
-    padding: 0px 70px 0 0px;
-  }
   .reach ul {
     left: 80px;
   }
@@ -1630,23 +1701,7 @@ hr {
   #temples {
     margin: 0 20px;
   }
-  #message {
-    margin: 90px 0 50px 0px;
-  }
-  .message-text {
-    padding: 20px 80px 0 80px;
-  }
-  .download,
-  .download a {
-    margin-top: 10px;
-    justify-content: space-evenly;
-  }
-  .temples-image {
-    margin-top: 15px;
-  }
-  .arrow-line3 {
-    display: none;
-  }
+
   .reach ul {
     left: 70px;
     height: 0px;
@@ -1691,20 +1746,7 @@ hr {
   #pagination-2 {
     display: none;
   }
-  #message {
-    margin: 50px 0 50px 0px;
-  }
-  .q1 {
-    position: relative;
-    margin-left: -13px;
-    margin-top: -10px;
-  }
-  .download {
-    display: block;
-  }
-  .download a {
-    margin-top: 0px;
-  }
+
   .more {
     margin-left: 0px;
   }
@@ -1726,17 +1768,6 @@ hr {
     display: inline-block;
   }
 
-  .temples-image {
-    display: block;
-    margin-left: 0px;
-    text-align: center;
-  }
-  .temples-text {
-    margin-left: 0px;
-  }
-  .message-text {
-    padding: 20px 0px 0 0px;
-  }
   .reach ul {
     left: 95px;
   }
