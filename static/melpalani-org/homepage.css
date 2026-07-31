@@ -1065,14 +1065,16 @@
   .events-pagination-number {
     font-size: 15px;
   }
-  .more, .calender {
+  .more,
+  .calender {
     float: none !important;
     display: inline-block !important;
     vertical-align: middle;
     margin: -25px 5px 15px 5px !important;
     padding-bottom: 0;
   }
-  .more a, .calender button {
+  .more a,
+  .calender button {
     font-size: 15px !important;
     padding: 4px 12px !important;
     height: 32px !important;
@@ -1113,10 +1115,12 @@
   .events-pagination-number {
     font-size: 14px;
   }
-  .more, .calender {
+  .more,
+  .calender {
     margin: -25px 4px 15px 4px !important;
   }
-  .more a, .calender button {
+  .more a,
+  .calender button {
     font-size: 14px !important;
     padding: 3px 10px !important;
     height: 32px !important;
@@ -1153,10 +1157,12 @@
   .events-pagination-number {
     font-size: 13px;
   }
-  .more, .calender {
+  .more,
+  .calender {
     margin: -20px 3px 10px 3px !important;
   }
-  .more a, .calender button {
+  .more a,
+  .calender button {
     font-size: 13px !important;
     padding: 3px 10px !important;
     height: 28px !important;
@@ -1193,10 +1199,12 @@
   .events-pagination-number {
     font-size: 12px;
   }
-  .more, .calender {
+  .more,
+  .calender {
     margin: -20px 2px 10px 2px !important;
   }
-  .more a, .calender button {
+  .more a,
+  .calender button {
     font-size: 12px !important;
     padding: 2px 8px !important;
     height: 28px !important;
@@ -1232,13 +1240,19 @@
 }
 
 /* -----------------------------  Charity & Divine Incarnation Section  ----------------------------- */
+#carouselExampleAutoplaying1 {
+  position: relative;
+  padding: 0 15px;
+}
 #carouselExampleAutoplaying1 .carousel-control-prev {
-  left: -20px;
-  top: 45%;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #carouselExampleAutoplaying1 .carousel-control-next {
-  right: -20px;
-  top: 45%;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .charity-image p {
   color: #fff;
@@ -1251,12 +1265,25 @@
 }
 .incarnation {
   background: #014c54;
-  padding: 30px 50px;
+  padding: 40px 0;
+  overflow: visible;
+}
+.incarnation .row {
+  align-items: center;
 }
 .incarnation-img {
-  position: absolute;
-  margin-top: -50px;
-  margin-left: 30px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.incarnation-img img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.incarnation-text {
+  text-align: center;
+  padding: 10px 15px;
 }
 .incarnation-text h2,
 .incarnation-text p,
@@ -1273,15 +1300,124 @@
   border-radius: 25px;
   color: #673301;
   width: fit-content;
-  padding: 0 15px;
+  padding: 3px 20px;
   text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
 }
 .incarnation-text a:hover,
 .more a:hover,
 .calender button:hover {
   background: #673301;
   color: #fff;
-  border: none;
+  border: 1px solid #673301;
+}
+
+@media (max-width: 1024px) {
+  .incarnation {
+    padding: 30px 0px;
+  }
+  .incarnation-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .incarnation .row > div:nth-child(4) {
+    order: 1;
+  }
+  .incarnation .row > div:nth-child(3) {
+    order: 2;
+  }
+  .incarnation .row > div:nth-child(2) {
+    order: 3;
+  }
+  .incarnation .row > div:nth-child(1),
+  .incarnation .row > div:nth-child(5) {
+    display: none !important;
+  }
+  .incarnation-img img {
+    max-width: 40% !important;
+    margin: 0 auto;
+    display: block;
+  }
+  #carouselExampleAutoplaying1 {
+    max-width: 480px !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .incarnation {
+    padding: 20px 0px;
+  }
+  .incarnation-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .incarnation-img img {
+    max-width: 50% !important;
+    margin: 0 auto;
+    display: block;
+  }
+  #carouselExampleAutoplaying1 {
+    max-width: 380px !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 575px) {
+  .incarnation {
+    padding: 15px 0px;
+  }
+  .incarnation-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .incarnation-img img {
+    max-width: 60% !important;
+    margin: 0 auto;
+    display: block;
+  }
+  #carouselExampleAutoplaying1 {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 480px) {
+  .incarnation {
+    padding: 15px 0px;
+  }
+  .incarnation-img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .incarnation-img img {
+    max-width: 70% !important;
+    margin: 0 auto;
+    display: block;
+  }
+  #carouselExampleAutoplaying1 {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 360px) {
+  .incarnation {
+    padding: 10px 0px;
+  }
+  .incarnation-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .incarnation-img img {
+    max-width: 80% !important;
+    margin: 0 auto;
+    display: block;
+  }
+  #carouselExampleAutoplaying1 {
+    max-width: 250px !important;
+    margin: 0 auto !important;
+  }
 }
 
 /* -----------------------------  Babaji's Message, Reach & Video Section  ----------------------------- */
@@ -1406,14 +1542,7 @@ hr {
   .stone-image img {
     width: 58vh;
   }
-  .incarnation {
-    padding: 30px 0px;
-  }
-  .incarnation-img {
-    margin-top: -50px;
-    margin-left: 10px;
-    width: 450px;
-  }
+
   .reach ul {
     left: 110px;
   }
@@ -1433,11 +1562,7 @@ hr {
   .stone-image img {
     width: 60vh;
   }
-  .incarnation-img {
-    margin-top: -36px;
-    margin-left: 20px;
-    width: 390px;
-  }
+
   .reach ul {
     top: -91px;
     height: 0px;
@@ -1451,10 +1576,6 @@ hr {
 }
 
 @media (max-width: 1200px) {
-  .incarnation-img {
-    margin-left: 0px;
-    width: 390px;
-  }
   .arrow-line3 {
     height: 240px;
   }
@@ -1479,14 +1600,7 @@ hr {
   .stone-text {
     padding: 0px 20px 0 20px;
   }
-  .incarnation {
-    padding: 30px 0px;
-  }
-  .incarnation-img {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
+
   .message-text {
     padding: 0px 70px 0 0px;
   }
@@ -1611,11 +1725,7 @@ hr {
     margin: 0 auto;
     display: inline-block;
   }
-  .incarnation-img {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
+
   .temples-image {
     display: block;
     margin-left: 0px;
