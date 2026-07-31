@@ -728,26 +728,8 @@
   bottom: -30px;
   right: auto;
 }
-.client-slider {
-  padding: 0;
-}
-#pagination-2 {
-  position: absolute;
-  width: auto;
-  right: 440px;
-  margin-top: 330px;
-}
-.client {
-  text-align: center;
-}
-.client span {
-  font-family: "roboto-regular";
-}
-.client p {
-  margin-bottom: 0;
-  margin-top: 10px;
-}
 
+/* -----------------------------  Responsive Media Queries for Temples Section  ----------------------------- */
 @media (max-width: 1200px) {
   #temples {
     padding: 20px 0 30px;
@@ -897,7 +879,7 @@
 /* -----------------------------  Events Section  ----------------------------- */
 .events {
   text-align: center;
-  padding: 50px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 .slick-carousel .slick-next {
   right: 20px;
@@ -945,6 +927,220 @@
   font-size: 22px;
   position: relative;
   top: 3px;
+}
+.client-slider {
+  padding: 0;
+}
+#events-row {
+  position: relative;
+  padding-bottom: 20px;
+}
+#events-row .events-slider {
+  margin-bottom: 60px;
+}
+.events-pagination {
+  position: absolute;
+  width: auto;
+  left: calc(50% + 10px);
+  transform: none;
+  bottom: 50px;
+  right: auto;
+}
+.events-pagination-number {
+  font-family: "roboto-regular";
+  color: #663200;
+  font-size: 16px;
+}
+#events-row .slick-prev {
+  position: absolute;
+  left: calc(50% - 65px);
+  transform: none;
+  top: auto;
+  bottom: -30px;
+  right: auto;
+}
+#events-row .slick-prev:before,
+#events-row .slick-next:before {
+  font-size: 18px;
+}
+#events-row .slick-next {
+  position: absolute;
+  left: calc(50% - 30px);
+  transform: none;
+  top: auto;
+  bottom: -30px;
+  right: auto;
+}
+.client {
+  text-align: center;
+}
+.client span {
+  font-family: "roboto-regular";
+}
+.client p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  #events-row {
+    padding-bottom: 30px;
+  }
+  #events-row .events-slider {
+    padding: 10px 10px;
+  }
+  #events-row .slick-prev,
+  #events-row .slick-next {
+    bottom: -40px;
+  }
+  #events-row .slick-prev:before,
+  #events-row .slick-next:before {
+    font-size: 16px;
+  }
+  .events-pagination-number {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .events {
+    padding: 25px 0 0 0;
+  }
+  #events-row {
+    padding-bottom: 30px;
+  }
+  #events-row .events-slider {
+    padding: 10px 10px;
+  }
+  #events-row .slick-prev:before,
+  #events-row .slick-next:before {
+    font-size: 16px;
+  }
+  .events-pagination-number {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .events {
+    padding: 20px 0 0 0;
+  }
+  #events-row {
+    padding-bottom: 20px;
+  }
+  #events-row .events-slider {
+    padding: 10px 10px;
+  }
+  #events-row .slick-prev,
+  #events-row .slick-next {
+    bottom: -30px;
+  }
+  #events-row .slick-prev:before,
+  #events-row .slick-next:before {
+    font-size: 14px;
+  }
+  #events-row .slick-prev,
+  #events-row .slick-next {
+    bottom: -20px;
+    width: 22px;
+    height: 22px;
+  }
+  #events-row .slick-prev {
+    left: calc(50% - 60px);
+  }
+  #events-row .slick-next {
+    left: calc(50% - 28px);
+  }
+  .events-pagination {
+    bottom: 60px;
+  }
+  .events-pagination-number {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .events {
+    padding: 15px 0 0 0;
+  }
+  #events-row {
+    padding-bottom: 20px;
+  }
+  #events-row .events-slider {
+    padding: 10px 10px;
+  }
+  #events-row .slick-prev:before,
+  #events-row .slick-next:before {
+    font-size: 14px;
+  }
+  #events-row .slick-prev,
+  #events-row .slick-next {
+    width: 20px;
+    height: 20px;
+  }
+  #events-row .slick-prev {
+    left: calc(50% - 55px);
+  }
+  #events-row .slick-next {
+    left: calc(50% - 26px);
+  }
+  .events-pagination-number {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #events-row {
+    padding-bottom: 15px;
+  }
+  #events-row .slick-prev:before,
+  #events-row .slick-next:before {
+    font-size: 13px;
+  }
+  #events-row .slick-prev,
+  #events-row .slick-next {
+    width: 20px;
+    height: 20px;
+  }
+  #events-row .slick-prev {
+    left: calc(50% - 50px);
+  }
+  #events-row .slick-next {
+    left: calc(50% - 24px);
+  }
+  .events-pagination {
+    bottom: 55px;
+  }
+  .events-pagination-number {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  #events-row {
+    padding-bottom: 10px;
+  }
+  #events-row .slick-prev:before,
+  #events-row .slick-next:before {
+    font-size: 12px;
+  }
+  #events-row .slick-prev,
+  #events-row .slick-next {
+    width: 18px;
+    height: 18px;
+  }
+  #events-row .slick-prev {
+    left: calc(50% - 45px);
+  }
+  #events-row .slick-next {
+    left: calc(50% - 22px);
+  }
+  .events-pagination {
+    bottom: 50px;
+  }
+  .events-pagination-number {
+    font-size: 12px;
+  }
 }
 
 /* -----------------------------  Laterite Stone Section  ----------------------------- */

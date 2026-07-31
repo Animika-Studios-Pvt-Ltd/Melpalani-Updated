@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ----------------------------- Slick Carousel Setup (Variables & Slide Counter Events) ----------------------------- */
-var $slider = $(".client-slider"),
-  $paginationNumber = $(".pagination-number");
+var $eventsSlider = $(".events-slider"),
+  $eventsPaginationNumber = $(".events-pagination-number");
 
 var $templesSlider = $(".temples-slider"),
   $templesPaginationNumber = $(".temples-pagination-number");
@@ -14,10 +14,10 @@ function padNumber(e) {
   return e < 10 ? "0" + e : e;
 }
 
-$slider.on("init reInit afterChange", function (e, t, i) {
+$eventsSlider.on("init reInit afterChange", function (e, t, i) {
   var o = t.currentSlide + 1,
     n = t.slideCount;
-  $paginationNumber.text(padNumber(o) + "/" + padNumber(n));
+  $eventsPaginationNumber.text(padNumber(o) + "/" + padNumber(n));
 });
 
 $templesSlider.on("init reInit afterChange", function (e, t, i) {
@@ -27,7 +27,7 @@ $templesSlider.on("init reInit afterChange", function (e, t, i) {
 });
 
 /* ----------------------------- Slick Carousel Slider Initialization ----------------------------- */
-$slider.slick({
+$eventsSlider.slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: !0,
@@ -100,7 +100,7 @@ $templesSlider.slick({
 });
 
 /* ----------------------------- ARIA Accessibility Compliances ----------------------------- */
-$(".client-slider").each(function () {
+$(".events-slider").each(function () {
   var $track = $(this).find(".slick-track");
   $track.attr("aria-label", "Events");
 });
