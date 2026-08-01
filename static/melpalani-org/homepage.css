@@ -68,7 +68,6 @@
   margin-right: 4px;
 }
 
-/* -----------------------------  Responsive Media Queries for Banner Section  ----------------------------- */
 @media (max-width: 1880px) {
   .babaji-banner {
     max-width: 420px;
@@ -729,7 +728,6 @@
   right: auto;
 }
 
-/* -----------------------------  Responsive Media Queries for Temples Section  ----------------------------- */
 @media (max-width: 1200px) {
   #temples {
     padding: 20px 0 30px;
@@ -1499,7 +1497,6 @@ hr {
   margin-left: 15px;
 }
 
-/* -----------------------------  Responsive Media Queries for Sevas & Babaji's Message  ----------------------------- */
 @media (max-width: 1200px) {
   #message {
     margin: 50px 0;
@@ -1612,7 +1609,6 @@ hr {
   font-size: 30px;
 }
 
-/* -----------------------------  Responsive Media Queries for Reach & Video Section  ----------------------------- */
 @media (max-width: 1440px) {
   .reach ul {
     left: 110px;
