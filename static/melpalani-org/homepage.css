@@ -728,6 +728,21 @@
   right: auto;
 }
 
+@media (max-width: 1440px) {
+  #pagination-2 {
+    right: 265px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #pagination-2 {
+    right: 220px;
+  }
+  .client-slider {
+    padding: 20px 25px;
+  }
+}
+
 @media (max-width: 1200px) {
   #temples {
     padding: 20px 0 30px;
@@ -741,6 +756,19 @@
   }
   .temples-pagination-number {
     font-size: 15px;
+  }
+  #pagination-2 {
+    right: 250px;
+    margin-top: 260px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .client-slider {
+    padding: 20px 30px;
+  }
+  #pagination-2 {
+    right: 190px;
   }
 }
 
@@ -761,6 +789,12 @@
   }
   .temples-pagination-number {
     font-size: 15px;
+  }
+  .client-slider {
+    padding: 15px 30px;
+  }
+  #pagination-2 {
+    right: 170px;
   }
 }
 
@@ -793,6 +827,18 @@
   }
   .temples-pagination-number {
     font-size: 15px;
+  }
+  .client-slider {
+    padding: 10px 0px !important;
+  }
+  .client-slider .slick-prev {
+    right: auto;
+  }
+  .client-slider .slick-next {
+    right: 0px;
+  }
+  #pagination-2 {
+    display: none;
   }
 }
 
@@ -1071,6 +1117,9 @@
     margin: -25px 5px 15px 5px !important;
     padding-bottom: 0;
   }
+  .more {
+    margin-left: 0px;
+  }
   .more a,
   .calender button {
     font-size: 15px !important;
@@ -1235,6 +1284,59 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 1440px) {
+  .stone-text {
+    padding: 4px 50px 0 50px;
+  }
+  .stone-image img {
+    width: 58vh;
+  }
+}
+
+@media (max-width: 1366px) {
+  .stone-text {
+    padding: 3px 80px 0 80px;
+  }
+  .stone-image img {
+    width: 60vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stone-text {
+    padding: 0px 20px 0 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .stone-text {
+    padding: 0px 0px 0 0px;
+  }
+  .stone {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .stone {
+    padding: 20px 0;
+    margin: 0 0px;
+    background: none;
+  }
+  .stone-text {
+    padding: 0px 0px 0 0px;
+  }
+  .stone-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .stone-image img {
+    max-width: 80% !important;
+    margin: 0 auto;
+    display: inline-block;
+  }
 }
 
 /* -----------------------------  Charity & Divine Incarnation Section  ----------------------------- */
@@ -1682,147 +1784,4 @@ hr {
   .reach ul {
     left: 50px;
   }
-}
-
-/* -----------------------------  Responsive Media Queries for Homepage  ----------------------------- */
-@media (max-width: 1440px) {
-  .inner-banner {
-    top: -280px;
-  }
-  .stone-text {
-    padding: 4px 50px 0 50px;
-  }
-  .stone-image img {
-    width: 58vh;
-  }
-
-  #pagination-2 {
-    right: 265px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .inner-banner {
-    top: -210px;
-    height: 230px;
-  }
-  .stone-text {
-    padding: 3px 80px 0 80px;
-  }
-  .stone-image img {
-    width: 60vh;
-  }
-
-  #pagination-2 {
-    right: 220px;
-  }
-  .client-slider {
-    padding: 20px 25px;
-  }
-}
-
-@media (max-width: 1200px) {
-  #pagination-2 {
-    right: 250px;
-    margin-top: 260px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .client-slider {
-    padding: 20px 30px;
-  }
-  .stone-text {
-    padding: 0px 20px 0 20px;
-  }
-
-  .inner-banner {
-    top: -190px;
-    height: 180px;
-  }
-  #pagination-2 {
-    right: 190px;
-  }
-}
-
-@media (max-width: 991px) {
-  .client-slider {
-    padding: 15px 30px;
-  }
-  .stone-text {
-    padding: 0px 0px 0 0px;
-  }
-  .stone,
-  #temples {
-    margin: 0 20px;
-  }
-
-  .inner-banner {
-    top: -200px;
-    height: 80px;
-  }
-  .inner-book {
-    background-size: contain;
-    padding: 20px;
-  }
-  .inner-book img {
-    width: 65px;
-  }
-  #pagination-2 {
-    right: 170px;
-  }
-}
-
-@media (max-width: 767px) {
-  .client-slider {
-    padding: 10px 0px !important;
-  }
-  .slick-prev,
-  .slick-next {
-    top: auto;
-  }
-  .client-slider .slick-prev {
-    right: auto;
-  }
-  .client-slider .slick-next {
-    right: 0px;
-  }
-  #pagination-2 {
-    display: none;
-  }
-
-  .more {
-    margin-left: 0px;
-  }
-  .stone {
-    padding: 20px 0;
-    margin: 0 0px;
-    background: none;
-  }
-  .stone-text {
-    padding: 0px 0px 0 0px;
-  }
-  .stone-image {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .stone-image img {
-    max-width: 80% !important;
-    margin: 0 auto;
-    display: inline-block;
-  }
-
-  .inner-banner {
-    top: 0;
-    height: auto;
-  }
-  .inner-banner img {
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
-  }
-  .inner-book-txt {
-    padding-bottom: 30px;
-  }
-}
-
-@media (max-width: 360px) {
 }

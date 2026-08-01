@@ -584,3 +584,50 @@ tbody {
   }
 }
 
+/* -----------------------------  Responsive Media Queries for Inner Pages Layout  ----------------------------- */
+@media (max-width: 1440px) {
+  .inner-banner {
+    top: -280px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .inner-banner {
+    top: -210px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inner-banner {
+    top: -190px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-banner {
+    top: -200px;
+    height: 80px;
+  }
+  .inner-book {
+    background-size: contain;
+    padding: 20px;
+  }
+  .inner-book img {
+    width: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-banner {
+    top: 0;
+    height: auto;
+  }
+  .inner-banner img {
+    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
+  }
+  .inner-book-txt {
+    padding-bottom: 30px;
+  }
+}
