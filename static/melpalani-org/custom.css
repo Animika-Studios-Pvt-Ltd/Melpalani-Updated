@@ -64,6 +64,343 @@ li,
   text-decoration: none;
 }
 
+/* -----------------------------  Responsive Media Queries for Global Typography  ----------------------------- */
+@media (max-width: 1440px) {
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p,
+  a,
+  li,
+  .sevas-more button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1366px) {
+  h1,
+  h2 {
+    font-size: 21px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p,
+  a,
+  li,
+  .sevas-more button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1,
+  h2 {
+    font-size: 15px;
+  }
+  p,
+  a,
+  li,
+  .calender button,
+  .fa-calendar-alt,
+  .location span,
+  .sevas-more button {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 17px;
+  }
+  p,
+  a,
+  li,
+  .slide-content span,
+  .calender button,
+  .fa-calendar-alt,
+  .location span,
+  .sevas-more button {
+    font-size: 13px;
+  }
+  #arrow:before {
+    width: 8px;
+    height: 8px;
+  }
+  #arrow:after {
+    width: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  h1,
+  h2 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p,
+  a,
+  li,
+  .location span,
+  .calender button,
+  .slide-content span,
+  .sevas-more button,
+  .rights p,
+  .powered a,
+  .powered p {
+    font-size: 13px;
+  }
+  .facility-image p {
+    font-size: 18px;
+  }
+  .arrow-1 {
+    top: -40px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1,
+  h2 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  p,
+  a,
+  li,
+  .calender button,
+  .fa-calendar-alt,
+  .slide-content span,
+  .location span {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  p,
+  a,
+  li,
+  .calender button,
+  .fa-calendar-alt,
+  .slide-content span,
+  .location span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  p,
+  a,
+  li,
+  .calender button,
+  .fa-calendar-alt,
+  .slide-content span,
+  .location span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1,
+  h2 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  p,
+  a,
+  li,
+  .calender button,
+  .fa-calendar-alt,
+  .slide-content span,
+  .location span {
+    font-size: 14px;
+  }
+}
+
+/* -----------------------------  Breadcrumbs Section  ----------------------------- */
+.brdcrmb nav {
+  float: inline-start;
+  margin-left: 220px;
+}
+
+@media (max-width: 1440px) {
+  .brdcrmb nav {
+    margin-left: 190px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .brdcrmb nav {
+    margin-left: 190px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brdcrmb nav {
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brdcrmb nav {
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 991px) {
+  .brdcrmb nav {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brdcrmb nav {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .brdcrmb nav {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brdcrmb nav {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .brdcrmb nav {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+/* -----------------------------  Inner Banner Section  ----------------------------- */
+.inner-banner {
+  position: relative;
+  top: -350px;
+  height: 160px;
+}
+.inner-banner img {
+  border-radius: 10px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px 4px rgb(0 0 0 / 39%);
+}
+
+@media (max-width: 1440px) {
+  .inner-banner {
+    top: -280px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .inner-banner {
+    top: -210px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inner-banner {
+    top: -190px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-banner {
+    top: -200px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-banner-bg {
+    display: none;
+  }
+  .inner-banner {
+    top: 0;
+    height: auto;
+  }
+  .inner-banner img {
+    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
+  }
+}
+
+@media (max-width: 575px) {
+  .inner-banner-bg {
+    display: none;
+  }
+  .inner-banner {
+    top: 0;
+    height: auto;
+  }
+  .inner-banner img {
+    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-banner-bg {
+    display: none;
+  }
+  .inner-banner {
+    top: 0;
+    height: auto;
+  }
+  .inner-banner img {
+    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
+  }
+}
+
+@media (max-width: 360px) {
+  .inner-banner-bg {
+    display: none;
+  }
+  .inner-banner {
+    top: 0;
+    height: auto;
+  }
+  .inner-banner img {
+    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
+  }
+}
+
 /* -----------------------------  Global Component: Animated CTA Button Style  ----------------------------- */
 .button {
   display: inline-block;
@@ -101,27 +438,11 @@ li,
   width: 100%;
 }
 
-/* -----------------------------  Inner Pages Specific Layout Styles  ----------------------------- */
-.inner-banner {
-  position: relative;
-  top: -350px;
-  height: 160px;
-}
-.brdcrmb nav {
-  float: inline-start;
-  margin-left: 220px;
-}
-.inner-banner img {
-  border-radius: 10px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px 4px rgb(0 0 0 / 39%);
-}
-.inner-temple-text img,
-.inner-temple-text h2 {
-  text-align: center;
-  margin: 10px auto;
-  display: block;
-}
+/* ==========================================================================
+   Inner Pages Specific Layout & Components
+   ========================================================================== */
+
+/* -----------------------------  Inner Book Section  ----------------------------- */
 .inner-book-txt h3 {
   font-family: "cinzel-regular";
   text-transform: lowercase;
@@ -135,8 +456,6 @@ li,
   background-position: center;
   background-size: auto;
   padding: 50px;
-}
-.inner-book {
   text-align: center;
 }
 .inner-book img {
@@ -146,29 +465,42 @@ li,
   text-align: center;
   padding-bottom: 80px;
 }
-.fading-3 {
-  background: #663200;
-  border-radius: 30px;
-  padding: 5px 25px;
-  color: #fff;
-  text-decoration: none;
+
+@media (max-width: 991px) {
+  .inner-book {
+    background-size: contain;
+    padding: 20px;
+  }
+  .inner-book img {
+    width: 65px;
+  }
 }
-.fading-3:hover {
-  color: #663200;
-  background: #dfd1c4;
-  transition: 0.5s linear;
+
+@media (max-width: 767px) {
+  .inner-book-txt {
+    padding-bottom: 30px;
+  }
 }
-.daimond {
-  list-style-type: none;
-  padding: 0;
+
+@media (max-width: 575px) {
+  .inner-book-txt {
+    padding-bottom: 30px;
+  }
 }
-.daimond li::before {
-  content: "\2666";
-  color: #663200;
-  padding-right: 0.5em;
-  font-family: "open-sans-regular";
-  letter-spacing: 0.02em;
+
+@media (max-width: 480px) {
+  .inner-book-txt {
+    padding-bottom: 30px;
+  }
 }
+
+@media (max-width: 360px) {
+  .inner-book-txt {
+    padding-bottom: 30px;
+  }
+}
+
+/* -----------------------------  Facilities Section  ----------------------------- */
 .facility-image p {
   font-family: "cinzel-regular";
   color: #663200;
@@ -178,70 +510,34 @@ li,
   margin-bottom: 50px;
   font-size: 25px;
 }
-.facility-image img,
-.donate-image img,
-.events-inner img,
-.pooja-img img {
+.facility-image img {
   border-radius: 10px;
 }
-.location-text {
-  padding: 0 50px;
-}
-.sacred-image {
-  padding: 0 5px;
-}
-.sacred-image img {
-  width: 100%;
-  margin: 2px 0;
-}
-.donate-image p {
-  margin: 10px 0 10px 0;
-}
+
+/* -----------------------------  Donate Section  ----------------------------- */
 .donate-image {
   margin-top: 10px;
   margin-bottom: 30px;
   text-align: center;
 }
-.address,
-.form {
-  margin-top: 20px;
+.donate-image img {
+  border-radius: 10px;
 }
-.location-inner {
-  padding-bottom: 50px;
+.donate-image p {
+  margin: 10px 0 10px 0;
 }
+
+/* -----------------------------  Events Section  ----------------------------- */
 .events-inner {
   margin-bottom: 40px;
   text-align: center;
 }
 .events-inner img {
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 .events-inner p {
   margin: 0;
-}
-.pooja-img p {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.pooja-img {
-  margin-bottom: 40px;
-}
-.pooja-img button {
-  font-family: "roboto-regular";
-  border: 1px solid #663200;
-  border-radius: 30px;
-  padding: 3px 15px;
-}
-.pooja-img button:hover {
-  background: #663200;
-  color: #fff;
-}
-.pooja-img ul {
-  position: absolute;
-  text-align: center;
-}
-.pooja-img li {
-  text-align: left;
 }
 .arrow-1 {
   position: relative;
@@ -294,6 +590,37 @@ li,
 .events-inner a:hover #arrow:after {
   animation: aniArrow02 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
 }
+
+/* -----------------------------  Pooja Section  ----------------------------- */
+.pooja-img {
+  margin-bottom: 40px;
+}
+.pooja-img img {
+  border-radius: 10px;
+}
+.pooja-img p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.pooja-img button {
+  font-family: "roboto-regular";
+  border: 1px solid #663200;
+  border-radius: 30px;
+  padding: 3px 15px;
+}
+.pooja-img button:hover {
+  background: #663200;
+  color: #fff;
+}
+.pooja-img ul {
+  position: absolute;
+  text-align: center;
+}
+.pooja-img li {
+  text-align: left;
+}
+
+/* -----------------------------  Sevas Section  ----------------------------- */
 .sevas-more {
   margin-bottom: 30px;
   width: fit-content;
@@ -304,6 +631,10 @@ li,
   padding: 0 12px;
   color: #663200;
 }
+.sevas-more button:hover {
+  background: #663200;
+  color: #fff;
+}
 .sevas-more .dropdown-menu a {
   border: 0;
   color: #333;
@@ -312,12 +643,11 @@ li,
 .sevas-more .dropdown-menu a:hover {
   color: #663200;
 }
-.sevas-more button:hover {
-  background: #663200;
-  color: #fff;
-}
+
+/* -----------------------------  Accordion Component  ----------------------------- */
 .accordion {
   border: 0px solid transparent !important;
+  --bs-border-color: transparent;
 }
 .accordion-item {
   border-bottom: 1px solid #663200;
@@ -336,9 +666,8 @@ li,
 .accordion-button:focus {
   box-shadow: none;
 }
-.accordion {
-  --bs-border-color: transparent;
-}
+
+/* -----------------------------  Table Component  ----------------------------- */
 .table thead th {
   background: #663200;
   color: #fff;
@@ -365,6 +694,8 @@ tbody {
   font-size: 18px;
   padding: 8px 20px;
 }
+
+/* -----------------------------  NiceZoomIn Modal Component  ----------------------------- */
 #niceZoomIn .modal-header {
   border: 0;
 }
@@ -386,248 +717,60 @@ tbody {
   position: relative;
   height: 30px;
 }
+
+/* -----------------------------  Checkout Row  ----------------------------- */
 .checkout-row {
   padding: 200px 0 100px 0;
   width: 100%;
 }
+
+/* -----------------------------  Inner Pages Specific Common Layout Styles  ----------------------------- */
+.inner-temple-text img,
+.inner-temple-text h2 {
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+}
 .inner-temple-text a {
   color: #0d6efd;
 }
-
-/* -----------------------------  Responsive Media Queries for Inner Pages & Typography  ----------------------------- */
-@media (min-width: 1731px) and (max-width: 1830px) {
-  h1,
-  h2 {
-    font-size: 28px;
-  }
+.fading-3 {
+  background: #663200;
+  border-radius: 30px;
+  padding: 5px 25px;
+  color: #fff;
+  text-decoration: none;
 }
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  h1,
-  h2 {
-    font-size: 26px;
-  }
-  p,
-  a,
-  li,
-  .calender button,
-  .sevas-more button {
-    font-size: 17px;
-  }
+.fading-3:hover {
+  color: #663200;
+  background: #dfd1c4;
+  transition: 0.5s linear;
 }
-
-@media (min-width: 1500px) and (max-width: 1599px) {
-  h1,
-  h2 {
-    font-size: 24px;
-  }
-  p,
-  a,
-  li {
-    font-size: 17px;
-  }
+.daimond {
+  list-style-type: none;
+  padding: 0;
 }
-
-@media (min-width: 1401px) and (max-width: 1499px) {
-  h1,
-  h2 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  p,
-  a,
-  li,
-  .sevas-more button {
-    font-size: 17px;
-  }
+.daimond li::before {
+  content: "\2666";
+  color: #663200;
+  padding-right: 0.5em;
+  font-family: "open-sans-regular";
+  letter-spacing: 0.02em;
 }
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  h1,
-  h2 {
-    font-size: 21px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  p,
-  a,
-  li,
-  .sevas-more button {
-    font-size: 17px;
-  }
-  .brdcrmb nav {
-    margin-left: 190px;
-  }
+.location-text {
+  padding: 0 50px;
 }
-
-@media (min-width: 1200px) and (max-width: 1320px) {
-  h1,
-  h2 {
-    font-size: 15px;
-  }
-  p,
-  a,
-  li,
-  .calender button,
-  .fa-calendar-alt,
-  .location span,
-  .sevas-more button {
-    font-size: 15px;
-    letter-spacing: 0;
-  }
-  .brdcrmb nav {
-    margin-left: 190px;
-  }
+.location-inner {
+  padding-bottom: 50px;
 }
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-  h1,
-  h2 {
-    font-size: 17px;
-  }
-  p,
-  a,
-  li,
-  .slide-content span,
-  .calender button,
-  .fa-calendar-alt,
-  .location span,
-  .sevas-more button {
-    font-size: 13px;
-  }
-  .brdcrmb nav {
-    margin-left: 160px;
-  }
-  #arrow:before {
-    width: 8px;
-    height: 8px;
-  }
-  #arrow:after {
-    width: 12px;
-  }
+.sacred-image {
+  padding: 0 5px;
 }
-
-@media (min-width: 992px) and (max-width: 1099px) {
-  h1,
-  h2 {
-    font-size: 14px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  p,
-  a,
-  li,
-  .location span,
-  .calender button,
-  .slide-content span,
-  .sevas-more button,
-  .rights p,
-  .powered a,
-  .powered p {
-    font-size: 13px;
-  }
-  .brdcrmb nav {
-    margin-left: 160px;
-  }
-  .facility-image p {
-    font-size: 18px;
-  }
-  .arrow-1 {
-    top: -40px;
-  }
+.sacred-image img {
+  width: 100%;
+  margin: 2px 0;
 }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  h2 {
-    font-size: 20px;
-  }
-  p,
-  a,
-  li,
-  .calender button,
-  .fa-calendar-alt,
-  .slide-content span,
-  .location span,
-  .rights p {
-    font-size: 14px;
-  }
-  .brdcrmb nav {
-    margin-left: 120px;
-  }
-}
-
-@media (max-width: 767px) {
-  h1,
-  h2 {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 25px;
-    text-align: center;
-  }
-  p,
-  a,
-  li,
-  .calender button,
-  .fa-calendar-alt,
-  .slide-content span,
-  .location span {
-    font-size: 17px;
-  }
-  .brdcrmb nav {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-}
-
-/* -----------------------------  Responsive Media Queries for Inner Pages Layout  ----------------------------- */
-@media (max-width: 1440px) {
-  .inner-banner {
-    top: -280px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .inner-banner {
-    top: -210px;
-    height: 230px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .inner-banner {
-    top: -190px;
-    height: 180px;
-  }
-}
-
-@media (max-width: 991px) {
-  .inner-banner {
-    top: -200px;
-    height: 80px;
-  }
-  .inner-book {
-    background-size: contain;
-    padding: 20px;
-  }
-  .inner-book img {
-    width: 65px;
-  }
-}
-
-@media (max-width: 767px) {
-  .inner-banner {
-    top: 0;
-    height: auto;
-  }
-  .inner-banner img {
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
-  }
-  .inner-book-txt {
-    padding-bottom: 30px;
-  }
+.address,
+.form {
+  margin-top: 20px;
 }
