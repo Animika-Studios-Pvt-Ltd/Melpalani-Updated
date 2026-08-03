@@ -158,9 +158,6 @@ li,
   .powered p {
     font-size: 13px;
   }
-  .facility-image p {
-    font-size: 18px;
-  }
   .arrow-1 {
     top: -40px;
   }
@@ -526,11 +523,48 @@ li,
   text-align: center;
   text-transform: lowercase;
   margin-top: 10px;
-  margin-bottom: 50px;
-  font-size: 25px;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 .facility-image img {
   border-radius: 10px;
+}
+
+@media (max-width: 1440px) {
+  .facility-image p {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .facility-image p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .facility-image p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .facility-image p {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .facility-image p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .facility-image p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 }
 
 /* -----------------------------  Donate Section  ----------------------------- */
@@ -637,6 +671,16 @@ li,
 }
 .pooja-img li {
   text-align: left;
+}
+
+@media (max-width: 575px) {
+  .pooja-img {
+    text-align: center;
+  }
+  .pooja-img img {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 /* -----------------------------  Sevas Section  ----------------------------- */
