@@ -244,45 +244,84 @@ li,
 }
 
 /* -----------------------------  Breadcrumbs Section  ----------------------------- */
+.brdcrmb {
+  position: relative;
+  z-index: 5;
+  margin-top: -100px;
+}
 .brdcrmb nav {
   float: inline-start;
   margin-left: 220px;
 }
 
+@media (max-width: 1700px) {
+  .brdcrmb {
+    margin-top: -50px;
+  }
+}
+
 @media (max-width: 1440px) {
+  .brdcrmb {
+    margin-top: -30px;
+  }
   .brdcrmb nav {
     margin-left: 190px;
   }
 }
 
+@media (max-width: 1400px) {
+  .brdcrmb {
+    margin-top: -100px;
+  }
+}
+
 @media (max-width: 1366px) {
+  .brdcrmb {
+    margin-top: -40px;
+  }
   .brdcrmb nav {
     margin-left: 190px;
   }
 }
 
 @media (max-width: 1200px) {
+  .brdcrmb {
+    margin-top: -110px;
+  }
   .brdcrmb nav {
     margin-left: 160px;
   }
 }
 
 @media (max-width: 1024px) {
+  .brdcrmb {
+    margin-top: -50px;
+  }
   .brdcrmb nav {
     margin-left: 160px;
   }
 }
 
 @media (max-width: 991px) {
+  .brdcrmb {
+    margin-top: -20px;
+  }
   .brdcrmb nav {
     margin-left: 120px;
   }
 }
 
 @media (max-width: 767px) {
+  .brdcrmb {
+    margin-top: 0px;
+  }
   .brdcrmb nav {
     margin-left: 0px;
     margin-top: 10px;
+  }
+  .brdcrmb a,
+  .brdcrmb li {
+    font-size: 14px;
   }
 }
 
@@ -298,6 +337,10 @@ li,
     margin-left: 0px;
     margin-top: 10px;
   }
+  .brdcrmb a,
+  .brdcrmb li {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -305,13 +348,17 @@ li,
     margin-left: 0px;
     margin-top: 10px;
   }
+  .brdcrmb a,
+  .brdcrmb li {
+    font-size: 12px;
+  }
 }
 
 /* -----------------------------  Inner Banner Section  ----------------------------- */
 .inner-banner {
   position: relative;
   top: -350px;
-  height: 160px;
+  height: 250px;
 }
 .inner-banner img {
   border-radius: 10px;
@@ -320,6 +367,12 @@ li,
 }
 .inner-banner #carouselExampleAutoplaying1 {
   max-width: 100% !important;
+}
+
+@media (max-width: 1700px) {
+  .inner-banner {
+    top: -300px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -331,21 +384,28 @@ li,
 @media (max-width: 1366px) {
   .inner-banner {
     top: -210px;
-    height: 230px;
+    height: 260px;
   }
 }
 
 @media (max-width: 1024px) {
   .inner-banner {
     top: -190px;
-    height: 180px;
+    height: 220px;
   }
 }
 
 @media (max-width: 991px) {
   .inner-banner {
     top: -280px;
-    height: 40px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .inner-banner {
+    top: -240px;
+    height: 120px;
   }
 }
 
