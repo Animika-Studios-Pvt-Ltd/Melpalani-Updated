@@ -321,6 +321,9 @@ li,
   border: 5px solid #fff;
   box-shadow: 0 0 10px 4px rgb(0 0 0 / 39%);
 }
+.inner-banner #carouselExampleAutoplaying1 {
+  max-width: 100% !important;
+}
 
 @media (max-width: 1440px) {
   .inner-banner {
@@ -344,8 +347,8 @@ li,
 
 @media (max-width: 991px) {
   .inner-banner {
-    top: -200px;
-    height: 80px;
+    top: -240px;
+    height: 40px;
   }
 }
 
@@ -357,48 +360,28 @@ li,
     top: 0;
     height: auto;
   }
+  .inner-banner .row > div:nth-child(1),
+  .inner-banner .row > div:nth-child(3) {
+    display: none;
+  }
+  .inner-banner .row > div:nth-child(2) {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .inner-banner img {
     box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
+    width: 100%;
   }
 }
 
 @media (max-width: 575px) {
-  .inner-banner-bg {
-    display: none;
-  }
-  .inner-banner {
-    top: 0;
-    height: auto;
-  }
-  .inner-banner img {
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
-  }
 }
 
 @media (max-width: 480px) {
-  .inner-banner-bg {
-    display: none;
-  }
-  .inner-banner {
-    top: 0;
-    height: auto;
-  }
-  .inner-banner img {
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
-  }
 }
 
 @media (max-width: 360px) {
-  .inner-banner-bg {
-    display: none;
-  }
-  .inner-banner {
-    top: 0;
-    height: auto;
-  }
-  .inner-banner img {
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 39%);
-  }
 }
 
 /* -----------------------------  Global Component: Animated CTA Button Style  ----------------------------- */
