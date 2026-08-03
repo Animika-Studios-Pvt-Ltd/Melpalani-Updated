@@ -91,34 +91,7 @@
 }
 
 /* -----------------------------  Responsive Media Queries for Header & Navigation  ----------------------------- */
-@media (min-width: 1600px) and (max-width: 1730px) {
-  .navbar-brand {
-    width: 350px;
-  }
-  .nav-item {
-    padding: 0 20px;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1599px) {
-  .navbar-brand {
-    left: 10px;
-    top: 0px;
-    width: 300px;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -10px;
-  }
-  .nav-item {
-    padding: 0 18px;
-  }
-  .nav-link {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1499px) {
+@media (max-width: 1440px) {
   .navbar-brand {
     left: 10px;
     top: 0px;
@@ -136,7 +109,7 @@
   }
 }
 
-@media (min-width: 1321px) and (max-width: 1400px) {
+@media (max-width: 1366px) {
   .navbar-brand {
     left: 5px;
     top: 0px;
@@ -157,28 +130,7 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1320px) {
-  .navbar-brand {
-    top: 0px;
-    left: 5px;
-    width: 300px;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    position: relative;
-    top: -10px;
-  }
-  .nav-item {
-    padding: 0 15px;
-  }
-  .nav-link {
-    font-size: 17px;
-  }
-  .dropdown-item {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
+@media (max-width: 1200px) {
   .navbar-brand {
     left: 10px;
     top: 0px;
@@ -199,7 +151,7 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1099px) {
+@media (max-width: 1024px) {
   .navbar-brand {
     left: 5px;
     top: 0px;
@@ -217,7 +169,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .top {
     position: relative;
   }
@@ -226,13 +178,11 @@
     top: 0px;
   }
   .navbar-brand img {
-    max-width: 220px;
+    max-width: 280px;
     height: auto;
   }
   .navbar button {
     border: 0;
-  }
-  .navbar button {
     position: relative;
     right: 15px;
   }
@@ -259,7 +209,7 @@
     width: auto;
   }
   .navbar-brand img {
-    max-width: 170px;
+    max-width: 210px;
     height: auto;
   }
   .navbar button {
@@ -283,4 +233,3 @@
     left: 0;
   }
 }
-

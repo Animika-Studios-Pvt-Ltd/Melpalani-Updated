@@ -347,8 +347,19 @@ li,
 
 @media (max-width: 991px) {
   .inner-banner {
-    top: -240px;
+    top: -280px;
     height: 40px;
+  }
+  .inner-banner .row > div:nth-child(1),
+  .inner-banner .row > div:nth-child(3) {
+    width: 8.33%;
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+  }
+  .inner-banner .row > div:nth-child(2) {
+    width: 83.33%;
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
   }
 }
 
