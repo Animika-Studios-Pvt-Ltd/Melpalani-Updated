@@ -589,11 +589,15 @@ li,
   text-align: center;
   height: 0;
 }
-.banner-bg img,
-.inner-banner-bg img {
+.banner-bg img {
   width: 100%;
   height: auto;
   aspect-ratio: 1920 / 955;
+}
+.inner-banner-bg img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 560;
 }
 .babaji-banner {
   max-width: 460px;
