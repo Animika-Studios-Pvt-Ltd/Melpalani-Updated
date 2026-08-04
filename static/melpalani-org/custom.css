@@ -106,7 +106,6 @@ li,
   li,
   .calender button,
   .fa-calendar-alt,
-  .location span,
   .sevas-more button {
     font-size: 16px;
     letter-spacing: 0;
@@ -126,7 +125,6 @@ li,
   .slide-content span,
   .calender button,
   .fa-calendar-alt,
-  .location span,
   .sevas-more button {
     font-size: 15px;
   }
@@ -149,7 +147,6 @@ li,
   p,
   a,
   li,
-  .location span,
   .calender button,
   .slide-content span,
   .sevas-more button,
@@ -176,8 +173,7 @@ li,
   li,
   .calender button,
   .fa-calendar-alt,
-  .slide-content span,
-  .location span {
+  .slide-content span {
     font-size: 16px;
   }
 }
@@ -195,8 +191,7 @@ li,
   li,
   .calender button,
   .fa-calendar-alt,
-  .slide-content span,
-  .location span {
+  .slide-content span {
     font-size: 15px;
   }
 }
@@ -214,8 +209,7 @@ li,
   li,
   .calender button,
   .fa-calendar-alt,
-  .slide-content span,
-  .location span {
+  .slide-content span {
     font-size: 14px;
   }
 }
@@ -233,8 +227,7 @@ li,
   li,
   .calender button,
   .fa-calendar-alt,
-  .slide-content span,
-  .location span {
+  .slide-content span {
     font-size: 13px;
   }
 }
@@ -784,21 +777,29 @@ li,
     margin-left: 0;
     margin-right: 0;
     height: auto;
-    padding-bottom: 30px;
+    padding: 10px 0 15px;
     position: relative;
     background: url("banner-bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
   .banner-image {
     padding: 0px 5px;
     margin-top: 20px;
   }
+  .banner-image img {
+    max-width: 100%;
+    margin: 10px auto;
+    display: block;
+  }
   .babaji-banner {
     width: 220px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -857,7 +858,15 @@ li,
 
 @media (max-width: 575px) {
   #banner {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  #banner > div:first-child {
+    display: none;
+  }
+  #banner > div:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
   }
   .babaji-banner {
     display: none;
@@ -3027,7 +3036,7 @@ tbody {
   background: #e4d8cc;
   margin: 0 80px;
   border-radius: 15px;
-  padding: 50px 0;
+  padding: 30px 0 20px;
   position: relative;
   z-index: 2;
 }
@@ -3049,12 +3058,22 @@ tbody {
 }
 .links {
   display: flex;
-  margin: 50px 0 20px 0px;
+  margin: 15px 0 10px 0px;
 }
 .links ul {
   list-style-type: none;
   padding: 0;
   margin-left: 40px;
+  margin-bottom: 0;
+}
+.links li {
+  margin: 0;
+}
+.links a {
+  display: flex;
+  align-items: center;
+  padding: 6px 4px 6px 0;
+  box-sizing: border-box;
 }
 .footer-2 {
   background: #663200;
@@ -3079,8 +3098,13 @@ tbody {
 }
 .social-media a {
   color: #663200;
-  font-size: 21px;
+  font-size: 24px;
   margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 @media (max-width: 1440px) {
@@ -3110,7 +3134,7 @@ tbody {
     height: 250px;
   }
   .links {
-    margin: 30px 0 0 0px;
+    margin: 10px 0 0 0px;
   }
   .location,
   .links ul {
@@ -3120,14 +3144,18 @@ tbody {
 
 @media (max-width: 991px) {
   .footer-1 {
-    margin: 0 20px;
-    padding: 30px 0;
+    margin: 0 40px;
+    padding: 30px 0 20px;
   }
   .links {
-    margin: 30px 0 0 0px;
+    margin: 10px 0 0 0px;
   }
   .links a {
     font-size: 14px;
+    padding: 8px 4px 8px 0;
+  }
+  .location span {
+    font-size: 16px;
   }
   .location,
   .links ul {
@@ -3143,8 +3171,8 @@ tbody {
     top: 0px;
   }
   .footer-1 {
-    margin: 0 0px;
-    padding: 25px 15px;
+    margin: 0;
+    padding: 30px 15px 20px;
     border-radius: 0px;
   }
   .map iframe {
@@ -3154,16 +3182,20 @@ tbody {
     margin-left: 0px;
     margin-top: 20px;
   }
+  .location span {
+    font-size: 16px;
+  }
   .links {
     display: block;
-    margin: 20px 0 0 0px;
+    margin: 8px 0 0 0px;
   }
   .links a {
     font-size: 16px;
+    padding: 8px 4px 8px 0;
   }
   .links ul {
     margin-left: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   .social-media ul {
     padding-left: 0px;
@@ -3191,7 +3223,7 @@ tbody {
 
 @media (max-width: 575px) {
   .footer-1 {
-    padding: 10px 10px;
+    padding: 30px 10px 20px;
   }
   .map iframe {
     height: 220px;
@@ -3204,6 +3236,7 @@ tbody {
   }
   .links a {
     font-size: 15px;
+    padding: 8px 4px 8px 0;
   }
   .rights p,
   .powered p,
@@ -3217,13 +3250,17 @@ tbody {
 
 @media (max-width: 480px) {
   .footer-1 {
-    padding: 10px 8px;
+    padding: 30px 8px 20px;
   }
   .map iframe {
     height: 180px;
   }
+  .location span {
+    font-size: 14px;
+  }
   .links a {
     font-size: 14px;
+    padding: 8px 4px 8px 0;
   }
   .rights p,
   .powered p,
@@ -3234,9 +3271,12 @@ tbody {
 
 @media (max-width: 360px) {
   .footer-1 {
-    padding: 10px 5px;
+    padding: 30px 5px 20px;
   }
   .map iframe {
     height: 160px;
+  }
+  .location span {
+    font-size: 13px;
   }
 }
