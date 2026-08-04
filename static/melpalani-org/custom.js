@@ -1,6 +1,9 @@
 /* ----------------------------- Animation On Scroll (AOS) Initialization ----------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
-  AOS.init();
+  AOS.init({
+    once: true,
+    duration: 800,
+  });
 });
 
 /* ----------------------------- Slick Carousel Setup (Variables & Slide Counter Events) ----------------------------- */
@@ -34,14 +37,14 @@ $eventsSlider.slick({
   autoplaySpeed: 3000,
   arrows: !0,
   dots: !1,
-  adaptiveHeight: !0,
+  adaptiveHeight: !1,
   responsive: [
     {
       breakpoint: 1121,
       settings: {
         slidesToShow: 3,
         autoplay: !0,
-        adaptiveHeight: !0,
+        adaptiveHeight: !1,
       },
     },
     {
@@ -49,7 +52,7 @@ $eventsSlider.slick({
       settings: {
         slidesToShow: 1,
         autoplay: !0,
-        adaptiveHeight: !0,
+        adaptiveHeight: !1,
       },
     },
     {
@@ -57,7 +60,7 @@ $eventsSlider.slick({
       settings: {
         slidesToShow: 2,
         autoplay: !0,
-        adaptiveHeight: !0,
+        adaptiveHeight: !1,
       },
     },
   ],
@@ -70,14 +73,14 @@ $templesSlider.slick({
   autoplaySpeed: 3000,
   arrows: !0,
   dots: !1,
-  adaptiveHeight: !0,
+  adaptiveHeight: !1,
   responsive: [
     {
       breakpoint: 1121,
       settings: {
         slidesToShow: 3,
         autoplay: !0,
-        adaptiveHeight: !0,
+        adaptiveHeight: !1,
       },
     },
     {
@@ -85,7 +88,7 @@ $templesSlider.slick({
       settings: {
         slidesToShow: 1,
         autoplay: !0,
-        adaptiveHeight: !0,
+        adaptiveHeight: !1,
       },
     },
     {
@@ -93,7 +96,7 @@ $templesSlider.slick({
       settings: {
         slidesToShow: 2,
         autoplay: !0,
-        adaptiveHeight: !0,
+        adaptiveHeight: !1,
       },
     },
   ],

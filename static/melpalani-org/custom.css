@@ -9,6 +9,7 @@ body {
   font-family: "cinzel-regular";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src:
     local("cinzel-regular"),
     local("cinzel-regular"),
@@ -18,6 +19,7 @@ body {
   font-family: "roboto-regular";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src:
     local("roboto-regular"),
     local("roboto-regular"),
@@ -27,6 +29,7 @@ body {
   font-family: "roboto-light";
   font-style: normal;
   font-weight: 200;
+  font-display: swap;
   src:
     local("roboto-light"),
     local("roboto-light"),
@@ -589,10 +592,17 @@ li,
 .banner-bg img,
 .inner-banner-bg img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 955;
 }
 .babaji-banner {
   max-width: 460px;
   margin: 0 auto;
+}
+.babaji-banner > img:first-child {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 457 / 708;
 }
 .babaji-banner img {
   height: auto;
@@ -601,12 +611,18 @@ li,
   width: 50%;
   margin: -30px auto 0 auto;
   display: block;
+  aspect-ratio: 240 / 85;
+  height: auto;
 }
 .banner-image img {
   border: 5px solid #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 4px rgb(0 0 0 / 39%);
   margin: 10px 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1174 / 691;
+  box-sizing: border-box;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -1221,6 +1237,11 @@ li,
 }
 .slick-slider {
   user-select: none;
+}
+/* Reserve space / prevent stacked slides before Slick initializes (CLS) */
+.temples-slider:not(.slick-initialized) > *:nth-child(n + 2),
+.events-slider:not(.slick-initialized) > *:nth-child(n + 2) {
+  display: none;
 }
 .client-slider .slick-next {
   right: 85px;
