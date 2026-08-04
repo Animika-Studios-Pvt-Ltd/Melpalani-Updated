@@ -906,6 +906,12 @@ tbody {
 .inner-temple-text a {
   color: #0d6efd;
 }
+.inner-pages-image-gallery .img-fluid {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
 .fading-3 {
   background: #663200;
   border-radius: 30px;
