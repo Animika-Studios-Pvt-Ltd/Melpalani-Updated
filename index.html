@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta
@@ -41,8 +41,21 @@
     <link
       rel="preload"
       as="image"
-      href="static/melpalani-org/banner-1.webp"
+      href="static/melpalani-org/banner-bg.webp"
       fetchpriority="high"
+      media="(min-width: 900px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="static/melpalani-org/babaji-banner.webp"
+      fetchpriority="high"
+      media="(max-width: 899px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="static/melpalani-org/banner-1.webp"
     />
     <link
       rel="preload"
@@ -263,21 +276,19 @@
             class="img-fluid"
             width="1920"
             height="955"
+            fetchpriority="high"
             alt="banner-bg"
           />
         </div>
         <div class="row" id="banner">
           <div class="col-lg-4 col-md-4 col-sm-3 col-12">
-            <div
-              class="babaji-banner"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
+            <div class="babaji-banner">
               <img
                 src="static/melpalani-org/babaji-banner.webp"
                 class="img-fluid"
                 width="457"
                 height="708"
+                fetchpriority="high"
                 alt="babaji-banner"
               />
               <img
